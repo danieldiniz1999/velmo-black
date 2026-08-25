@@ -91,22 +91,6 @@ export function FaqSection() {
           })}
         </div>
 
-        {/* Still have questions? */}
-        <div className="mt-8 sm:mt-10 text-center p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-zinc-900/40 border border-zinc-800">
-          <p className="text-xs sm:text-sm font-semibold text-zinc-300">
-            Ainda tem alguma dúvida específica sobre o seu caso?
-          </p>
-          <a
-            href={getWhatsAppUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 px-5 py-2.5 sm:py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider btn-shimmer transition-colors"
-          >
-            <WhatsAppIcon className="h-3.5 w-3.5 fill-rose-400 flex-shrink-0" />
-            <span>Conversar no WhatsApp</span>
-          </a>
-        </div>
-
       </div>
     </section>
   );
