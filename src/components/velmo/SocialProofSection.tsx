@@ -29,7 +29,7 @@ const STORIES: Story[] = [
     waistReduction: "-14cm de cintura",
     protocol: "Protocolo Duo Morango (3 Meses)",
     testimonial: "Eu sofria com compulsão por doces no final da tarde e retenção de líquidos após a gestação. Quando iniciei o Protocolo Duo com o Drink de Morango Silvestre, meu apetite normalizou já nos primeiros dias e desinchei muito rápido sem fraqueza.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=80",
+    image: "/images/juliana-medeiros.jpg",
     stars: 5,
     verified: true,
   },
