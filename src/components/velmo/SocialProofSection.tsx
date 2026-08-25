@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Star, Sparkles, ChevronLeft, ChevronRight, CheckCircle2, ShieldCheck, ArrowRight } from "lucide-react";
+import { Star, Sparkles, ChevronLeft, ChevronRight, CheckCircle2, ShieldCheck, Flame, Scale } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
@@ -10,6 +10,7 @@ interface Transformation {
   location: string;
   weightLoss: string;
   timeframe: string;
+  waistReduction: string;
   protocol: string;
   testimonial: string;
   beforeImg: string;
@@ -26,10 +27,11 @@ const TRANSFORMATIONS: Transformation[] = [
     location: "Curitiba, PR",
     weightLoss: "-16.4 kg",
     timeframe: "em 75 dias",
+    waistReduction: "-14cm de cintura",
     protocol: "Protocolo Duo Morango (3 Meses)",
-    testimonial: "Eu tentava dietas restritivas há anos e sempre desistia por causa da compulsão. Com o Drink de Morango e as cápsulas, meu apetite normalizou já na primeira semana e a barriga desinchou muito rápido sem fraqueza.",
-    beforeImg: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80",
-    afterImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+    testimonial: "Eu sofria com compulsão por doces e gordura acumulada na barriga após a gravidez. Quando iniciei o Protocolo Duo com o Drink de Morango, o inchaço desapareceu em duas semanas e meu corpo desinflamou de verdade!",
+    beforeImg: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&auto=format&fit=crop&q=80",
+    afterImg: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&auto=format&fit=crop&q=80",
     stars: 5,
     verified: true,
   },
@@ -40,10 +42,11 @@ const TRANSFORMATIONS: Transformation[] = [
     location: "Campinas, SP",
     weightLoss: "-13.8 kg",
     timeframe: "em 60 dias",
+    waistReduction: "-11cm de abdômen",
     protocol: "Velmo Black Cápsulas (60 caps)",
-    testimonial: "Gordura abdominal que me incomodava há quase 10 anos foi embora. Tive muito mais disposição para o dia a dia e treino, com zero taquicardia ou tremor. O atendimento no WhatsApp foi essencial.",
-    beforeImg: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=80",
-    afterImg: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+    testimonial: "Estava com aquela barriga de chopp estufada e metabolismo travado depois dos 40. O Velmo Black destravou minha queima de gordura sem dar coração acelerado. Hoje me sinto 10 anos mais jovem.",
+    beforeImg: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&auto=format&fit=crop&q=80",
+    afterImg: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&auto=format&fit=crop&q=80",
     stars: 5,
     verified: true,
   },
@@ -54,10 +57,11 @@ const TRANSFORMATIONS: Transformation[] = [
     location: "Belo Horizonte, MG",
     weightLoss: "-11.2 kg",
     timeframe: "em 45 dias",
+    waistReduction: "-9cm de cintura",
     protocol: "Protocolo Duo Morango Silvestre",
-    testimonial: "Voltei a usar vestidos antigos que estavam guardados no armário há 3 anos! O sabor de Morango Silvestre é super gostoso e refrescante, tomo geladinho e fico sem vontade de comer doce a tarde toda.",
-    beforeImg: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&auto=format&fit=crop&q=80",
-    afterImg: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80",
+    testimonial: "Minhas roupas 44 estavam apertando. Em 45 dias com o drink sabor morango e as cápsulas, voltei a vestir 38 com folga! O sabor é maravilhoso e tira a fome por completo.",
+    beforeImg: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&auto=format&fit=crop&q=80",
+    afterImg: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=600&auto=format&fit=crop&q=80",
     stars: 5,
     verified: true,
   },
@@ -68,10 +72,11 @@ const TRANSFORMATIONS: Transformation[] = [
     location: "Florianópolis, SC",
     weightLoss: "-19.5 kg",
     timeframe: "em 90 dias",
-    protocol: "Transformação Total (Duo 5 Meses)",
-    testimonial: "Minha autoestima foi totalmente restaurada. Não sinto mais aquele peso e estufamento depois das refeições. Minha disposição física é outra e todos da minha família notaram a diferença.",
-    beforeImg: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
-    afterImg: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80",
+    waistReduction: "-18cm de medidas",
+    protocol: "Transformação Total (5 Meses)",
+    testimonial: "Estava acima do peso há mais de 8 anos e já tinha tentado de tudo sem sucesso. A reeducação com o Velmo Black me fez secar 19kg sem efeito sanfona. Minha autoestima foi restaurada!",
+    beforeImg: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600&auto=format&fit=crop&q=80",
+    afterImg: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&auto=format&fit=crop&q=80",
     stars: 5,
     verified: true,
   },
@@ -82,10 +87,11 @@ const TRANSFORMATIONS: Transformation[] = [
     location: "Brasília, DF",
     weightLoss: "-9.8 kg",
     timeframe: "em 35 dias",
+    waistReduction: "-8cm de cintura",
     protocol: "Velmo Black Drink Morango",
-    testimonial: "Trabalho sentado o dia todo e comia por ansiedade. O drink me deu saciedade prolongada, regulou o intestino e desinchou a região da cintura logo nas primeiras semanas.",
-    beforeImg: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80",
-    afterImg: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80",
+    testimonial: "Trabalho sentado no computador e comia por ansiedade. O drink me deu saciedade prolongada, regulou meu intestino e reduziu a gordura visceral rapidamente.",
+    beforeImg: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&auto=format&fit=crop&q=80",
+    afterImg: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&auto=format&fit=crop&q=80",
     stars: 5,
     verified: true,
   },
@@ -96,10 +102,11 @@ const TRANSFORMATIONS: Transformation[] = [
     location: "Rio de Janeiro, RJ",
     weightLoss: "-15.1 kg",
     timeframe: "em 70 dias",
+    waistReduction: "-13cm de cintura",
     protocol: "Protocolo Duo Morango (3 Meses)",
-    testimonial: "O melhor investimento que fiz na minha saúde. Perdi peso de forma limpa, sem dor de cabeça e com a pele firme. Indico para todas as minhas amigas!",
-    beforeImg: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=400&auto=format&fit=crop&q=80",
-    afterImg: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&auto=format&fit=crop&q=80",
+    testimonial: "Eliminei 15kg com a pele firme e sem aquela flacidez horrível. O atendimento e suporte no WhatsApp durante o tratamento me deram total segurança.",
+    beforeImg: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&auto=format&fit=crop&q=80",
+    afterImg: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&auto=format&fit=crop&q=80",
     stars: 5,
     verified: true,
   },
@@ -109,12 +116,12 @@ export function SocialProofSection() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
 
-  // Auto rotate carousel every 5 seconds when not interacting
+  // Auto rotate carousel every 6 seconds when not interacting
   useEffect(() => {
     if (!isAutoPlaying) return;
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % TRANSFORMATIONS.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
 
@@ -141,7 +148,7 @@ export function SocialProofSection() {
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 rounded-full border border-rose-500/30 bg-rose-950/40 px-3 py-0.5 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-rose-300">
             <Sparkles className="h-3 w-3" />
-            Resultados Comprovados
+            Resultados Comprovados de Perda de Peso
           </div>
           
           <h2 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-black text-white tracking-tight leading-tight">
@@ -150,7 +157,7 @@ export function SocialProofSection() {
           </h2>
           
           <p className="text-xs sm:text-sm lg:text-base text-zinc-400 max-w-2xl mx-auto">
-            Histórias autênticas de clientes que recuperaram a autoestima, desincharam e transformaram o corpo.
+            Veja a redução drástica de medidas e gordura corporal de clientes reais que seguiram o protocolo.
           </p>
         </div>
 
@@ -163,44 +170,48 @@ export function SocialProofSection() {
           {/* Main Story Content */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-center">
             
-            {/* Left Column: Photos (Before vs After) */}
+            {/* Left Column: True Before & After Body Images */}
             <div className="lg:col-span-5 flex flex-col items-center">
-              <div className="relative w-full rounded-2xl bg-black/60 p-2.5 sm:p-3 border border-zinc-800 shadow-xl">
+              <div className="relative w-full rounded-2xl bg-black/70 p-3 sm:p-4 border border-zinc-800 shadow-2xl">
                 
-                {/* Photo Grid */}
-                <div className="grid grid-cols-2 gap-2 sm:gap-2.5">
-                  {/* Before */}
-                  <div className="relative rounded-xl overflow-hidden aspect-[3/4] bg-zinc-900 border border-zinc-700/60">
+                {/* Photo Grid of Physical Body Transformation */}
+                <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
+                  
+                  {/* Before Photo (Overweight / Belly / Measuring) */}
+                  <div className="relative rounded-xl overflow-hidden aspect-[3/4] bg-zinc-950 border border-zinc-700/80 group">
                     <img
                       src={item.beforeImg}
-                      alt={`Antes - ${item.name}`}
-                      className="h-full w-full object-cover object-center"
+                      alt={`Antes - ${item.name} com sobrepeso`}
+                      className="h-full w-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-black/80 backdrop-blur-md text-[9px] font-black uppercase tracking-wider text-zinc-300 border border-zinc-700">
-                      Antes
+                    <div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-black/85 backdrop-blur-md text-[9px] font-black uppercase tracking-wider text-rose-300 border border-zinc-700 shadow-md">
+                      Antes (Início)
                     </div>
                   </div>
 
-                  {/* After */}
-                  <div className="relative rounded-xl overflow-hidden aspect-[3/4] bg-zinc-900 border-2 border-rose-500/80 shadow-[0_0_15px_rgba(255,30,86,0.3)]">
+                  {/* After Photo (Slim / Flat stomach / In shape) */}
+                  <div className="relative rounded-xl overflow-hidden aspect-[3/4] bg-zinc-950 border-2 border-rose-500 shadow-[0_0_20px_rgba(255,30,86,0.35)] group">
                     <img
                       src={item.afterImg}
-                      alt={`Depois - ${item.name}`}
-                      className="h-full w-full object-cover object-center"
+                      alt={`Depois - ${item.name} corpo transformado`}
+                      className="h-full w-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-gradient-to-r from-rose-500 to-red-600 text-[9px] font-black uppercase tracking-wider text-white shadow-md">
-                      Depois
+                    <div className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-gradient-to-r from-rose-500 to-red-600 text-[9px] font-black uppercase tracking-wider text-white shadow-lg">
+                      Depois (Resultado)
                     </div>
                   </div>
+
                 </div>
 
-                {/* Highlight Badge */}
-                <div className="mt-2.5 flex items-center justify-between px-1">
-                  <span className="text-[10px] sm:text-[11px] font-bold text-zinc-400">
-                    {item.timeframe}
-                  </span>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-rose-500/20 px-2.5 py-0.5 text-xs font-black text-rose-300 border border-rose-500/40">
-                    {item.weightLoss}
+                {/* Measurable Transformation Badges */}
+                <div className="mt-3 pt-2.5 border-t border-zinc-800 flex items-center justify-between px-1">
+                  <div className="flex items-center gap-1 text-[10px] sm:text-[11px] font-bold text-zinc-400">
+                    <Scale className="h-3 w-3 text-rose-400" />
+                    <span>{item.waistReduction}</span>
+                  </div>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-rose-500/20 px-2.5 py-0.5 text-xs font-black text-rose-300 border border-rose-500/40 shadow-sm">
+                    <Flame className="h-3 w-3 text-rose-400" />
+                    {item.weightLoss} ({item.timeframe})
                   </span>
                 </div>
 
@@ -219,14 +230,17 @@ export function SocialProofSection() {
                 </div>
                 <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded-full border border-emerald-500/30">
                   <CheckCircle2 className="h-3 w-3" />
-                  Resultado Verificado
+                  Transformação Verificada
                 </span>
               </div>
 
               {/* Protocol Badge */}
-              <div>
-                <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-rose-400">
-                  Protocolo: {item.protocol}
+              <div className="rounded-xl bg-zinc-900/80 p-2.5 border border-zinc-800 flex items-center justify-between">
+                <span className="text-[10px] sm:text-[11px] font-extrabold text-rose-300">
+                  💊 Tratamento: {item.protocol}
+                </span>
+                <span className="text-[10px] text-zinc-400 font-medium">
+                  {item.timeframe}
                 </span>
               </div>
 
@@ -242,7 +256,9 @@ export function SocialProofSection() {
                   <p className="text-[11px] text-zinc-400">{item.age} • {item.location}</p>
                 </div>
                 <div className="text-right">
-                  <span className="text-[10px] text-zinc-500 font-medium">Uso contínuo</span>
+                  <span className="text-[10px] text-emerald-400 font-bold bg-emerald-950/40 px-2 py-0.5 rounded-md border border-emerald-500/30">
+                    Sem efeito rebote
+                  </span>
                 </div>
               </div>
 
@@ -252,10 +268,10 @@ export function SocialProofSection() {
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-500 to-red-600 px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-extrabold text-white shadow-[0_0_20px_rgba(255,30,86,0.4)] btn-shimmer hover:scale-[1.02] transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-500 via-red-500 to-rose-600 px-5 py-3 text-xs sm:text-sm font-extrabold text-white shadow-[0_0_20px_rgba(255,30,86,0.4)] btn-shimmer hover:scale-[1.02] transition-all"
                 >
                   <WhatsAppIcon className="h-4 w-4 fill-white flex-shrink-0" />
-                  <span>QUERO RESULTADOS COMO ESTES</span>
+                  <span>QUERO UMA TRANSFORMAÇÃO COMO ESTA</span>
                 </a>
               </div>
 
@@ -307,11 +323,11 @@ export function SocialProofSection() {
         <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-[11px] sm:text-xs text-zinc-400 text-center">
           <div className="flex items-center gap-1.5">
             <ShieldCheck className="h-3.5 w-3.5 text-rose-400" />
-            <span>Mais de 14.800 clientes transformados</span>
+            <span>Mais de 14.800 pessoas transformadas</span>
           </div>
           <div className="flex items-center gap-1.5">
             <CheckCircle2 className="h-3.5 w-3.5 text-rose-400" />
-            <span>Resultados graduais e saudáveis</span>
+            <span>Redução visível de medidas e gordura visceral</span>
           </div>
         </div>
 
