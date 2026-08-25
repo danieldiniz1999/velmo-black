@@ -85,7 +85,7 @@ const STORIES: Story[] = [
     waistReduction: "-8cm de cintura",
     protocol: "Velmo Black Drink Morango",
     testimonial: "Trabalho muito tempo sentado e comia besteira por ansiedade. O drink me deu saciedade prolongada, regulou meu intestino e afinou a cintura logo nas primeiras semanas de uso diário.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80",
+    image: "/images/lucas-guimaraes.jpg",
     stars: 5,
     verified: true,
   },
