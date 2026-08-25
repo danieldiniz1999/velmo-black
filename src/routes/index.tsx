@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AnnouncementBar } from "../components/velmo/AnnouncementBar";
-import { Navbar } from "../components/velmo/Navbar";
 import { HeroSection } from "../components/velmo/HeroSection";
 import { StatsBar } from "../components/velmo/StatsBar";
 import { MechanismSection } from "../components/velmo/MechanismSection";
@@ -25,10 +24,7 @@ function Index() {
       {/* 1. Top Urgency Announcement Bar */}
       <AnnouncementBar />
 
-      {/* 2. Official Sticky Navbar */}
-      <Navbar />
-
-      {/* 3. Main Hero Section (High Impact & Desejo Imediato) */}
+      {/* 2. Main Hero Section (High Impact & Desejo Imediato) */}
       <HeroSection />
 
       {/* 4. Authority & Credibility Bar */}
