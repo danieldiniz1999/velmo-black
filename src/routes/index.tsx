@@ -12,6 +12,7 @@ import { KitsPricingSection } from "../components/velmo/KitsPricingSection";
 import { GuaranteeSection } from "../components/velmo/GuaranteeSection";
 import { FaqSection } from "../components/velmo/FaqSection";
 import { FloatingWhatsApp } from "../components/velmo/FloatingWhatsApp";
+import { RecentBuyersPopup } from "../components/velmo/RecentBuyersPopup";
 import { Footer } from "../components/velmo/Footer";
 
 export const Route = createFileRoute("/")({
@@ -62,6 +63,9 @@ function Index() {
 
       {/* 14. Floating Sticky WhatsApp Lead Trigger */}
       <FloatingWhatsApp />
+
+      {/* 15. Recent Buyers Social Proof Popup (Bottom Left) */}
+      <RecentBuyersPopup />
     </div>
   );
 }
