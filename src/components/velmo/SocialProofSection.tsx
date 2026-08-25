@@ -57,7 +57,7 @@ const STORIES: Story[] = [
     waistReduction: "-9cm de cintura",
     protocol: "Protocolo Duo Morango Silvestre",
     testimonial: "Voltei a usar vestidos e calças que estavam guardados há 3 anos! O sabor de Morango Silvestre é super gostoso e refrescante, tomo geladinho e fico saciada a tarde inteira sem vontade de beliscar.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=80",
+    image: "/images/carla-albuquerque.jpg",
     stars: 5,
     verified: true,
   },
