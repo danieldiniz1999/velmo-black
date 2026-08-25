@@ -50,7 +50,7 @@ export function RecentBuyersPopup() {
         setIsVisible(false);
       }, 3000);
 
-      // Total cycle: 3s visible + 2s pause = 5000ms
+      // Total cycle: 3s visible + 4s pause = 7000ms
       cycleInterval = setInterval(() => {
         setCurrentIndex((prev) => (prev + 1) % BUYERS.length);
         setIsVisible(true);
@@ -58,7 +58,7 @@ export function RecentBuyersPopup() {
         hideTimeout = setTimeout(() => {
           setIsVisible(false);
         }, 3000);
-      }, 5000);
+      }, 7000);
     }, 3000);
 
     return () => {
