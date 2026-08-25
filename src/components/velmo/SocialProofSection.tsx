@@ -131,7 +131,7 @@ export function SocialProofSection() {
   const item = STORIES[currentIndex];
 
   return (
-    <section id="depoimentos" className="relative py-12 sm:py-16 lg:py-24 bg-[#090b10] overflow-hidden">
+    <section id="depoimentos" className="relative pt-4 sm:pt-6 pb-12 sm:pb-16 bg-[#090b10] overflow-hidden">
       {/* Background Ambient Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] sm:w-[800px] h-[350px] sm:h-[500px] bg-rose-500/10 rounded-full blur-[120px] pointer-events-none -z-10" />
 

@@ -37,7 +37,7 @@ export function ComparisonTable() {
   ];
 
   return (
-    <section id="comparativo" className="relative py-12 sm:py-16 lg:py-24 bg-[#07080a]">
+    <section id="comparativo" className="relative pt-6 sm:pt-10 pb-4 sm:pb-6 bg-[#07080a]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

@@ -35,7 +35,7 @@ export function TransformationCalculator() {
   const rec = getRecommendation();
 
   return (
-    <section id="simulador" className="relative py-12 sm:py-16 lg:py-24 bg-[#090b10] border-y border-rose-500/20">
+    <section id="simulador" className="relative py-8 sm:py-12 bg-[#090b10] border-y border-rose-500/20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
