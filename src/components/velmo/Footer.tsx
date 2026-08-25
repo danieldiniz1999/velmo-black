@@ -13,12 +13,11 @@ export function Footer() {
           {/* Col 1: Brand */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-rose-500 to-red-700 text-white font-black text-base shadow-[0_0_15px_rgba(255,30,86,0.4)]">
-                V
-              </div>
-              <span className="text-xl font-extrabold text-white tracking-wider">
-                VELMO <span className="text-rose-500">BLACK</span>
-              </span>
+              <img
+                src="/images/velmo-logo.png"
+                alt="Velmo Black Oficial"
+                className="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_0_12px_rgba(255,30,86,0.3)]"
+              />
             </div>
             
             <p className="text-zinc-400 text-xs leading-relaxed max-w-md">

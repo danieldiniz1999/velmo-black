@@ -11,18 +11,12 @@ export function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-3 flex-shrink-0 group">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-rose-500 via-red-600 to-rose-800 p-[1px] shadow-[0_0_20px_rgba(255,30,86,0.4)]">
-            <div className="flex h-full w-full items-center justify-center rounded-xl bg-[#0a0c10]">
-              <span className="font-black text-xl tracking-tighter text-rose-500">V</span>
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <div className="flex items-center gap-1.5 leading-none">
-              <span className="font-extrabold text-xl tracking-wider text-white">VELMO</span>
-              <span className="font-extrabold text-xl tracking-wider text-rose-500 drop-shadow-[0_0_12px_rgba(255,30,86,0.7)]">BLACK</span>
-            </div>
-          </div>
+        <a href="#" className="flex items-center flex-shrink-0 group">
+          <img
+            src="/images/velmo-logo.png"
+            alt="Velmo Black Oficial"
+            className="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_15px_rgba(255,30,86,0.3)]"
+          />
         </a>
 
         {/* Navigation Links */}
