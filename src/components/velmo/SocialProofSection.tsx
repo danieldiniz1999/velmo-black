@@ -43,7 +43,7 @@ const STORIES: Story[] = [
     waistReduction: "-11cm de abdômen",
     protocol: "Velmo Black Cápsulas (60 caps)",
     testimonial: "Estava com metabolismo travado depois dos 40 e gordura visceral que não saía por nada. O Velmo Black me deu muita disposição para o dia a dia e acelerou a queima sem dar coração acelerado. Atendimento no WhatsApp nota 10.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80",
+    image: "/images/renato-silveira.jpg",
     stars: 5,
     verified: true,
   },
