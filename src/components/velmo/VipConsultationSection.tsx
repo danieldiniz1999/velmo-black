@@ -112,23 +112,45 @@ export function VipConsultationSection() {
             Clique abaixo para receber sua indicação sob medida diretamente no WhatsApp e garantir o valor promocional de fábrica para sua região.
           </p>
 
-          {/* Mini product visual preview */}
-          <div className="py-2 flex items-center justify-center gap-3">
-            <div className="h-14 sm:h-16 flex items-center justify-center p-1.5 rounded-xl bg-black/60 border border-cyan-500/30 shadow-md">
-              <img
-                src="/images/velmo-capsulas.png"
-                alt="Velmo Black Cápsulas"
-                className="h-full w-auto object-contain drop-shadow-[0_2px_8px_rgba(0,229,255,0.2)]"
-              />
+          {/* Product Visual Showcase Duo (Enlarged & Prominent) */}
+          <div className="py-4 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            
+            {/* Cápsulas Card */}
+            <div className="flex flex-col items-center p-3 sm:p-4 rounded-2xl bg-black/70 border border-cyan-500/40 shadow-[0_4px_20px_rgba(0,229,255,0.15)] w-36 sm:w-44">
+              <span className="px-2 py-0.5 rounded-full bg-cyan-400 text-black text-[9px] font-black uppercase tracking-wider mb-2 shadow-sm">
+                60 Cápsulas
+              </span>
+              <div className="h-28 sm:h-36 w-full flex items-center justify-center overflow-hidden">
+                <img
+                  src="/images/velmo-capsulas.png"
+                  alt="Velmo Black Cápsulas"
+                  className="h-full w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,229,255,0.25)] hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <span className="mt-2 text-xs font-bold text-white">Velmo Black</span>
+              <span className="text-[10px] text-cyan-300 font-semibold">Termogênico Puro</span>
             </div>
-            <span className="text-rose-500 font-black text-base">+</span>
-            <div className="h-14 sm:h-16 flex items-center justify-center p-1.5 rounded-xl bg-black/60 border border-rose-500/40 shadow-md">
-              <img
-                src="/images/velmo-drink-morango.png"
-                alt="Velmo Black Drink Morango"
-                className="h-full w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,30,86,0.25)]"
-              />
+
+            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-rose-950/80 border border-rose-500/40 text-rose-400 font-black text-lg shadow-md">
+              +
             </div>
+
+            {/* Drink Morango Card */}
+            <div className="flex flex-col items-center p-3 sm:p-4 rounded-2xl bg-black/70 border border-rose-500/50 shadow-[0_4px_20px_rgba(255,30,86,0.2)] w-36 sm:w-44">
+              <span className="px-2 py-0.5 rounded-full bg-rose-500 text-white text-[9px] font-black uppercase tracking-wider mb-2 shadow-sm">
+                🍓 Morango 150g
+              </span>
+              <div className="h-28 sm:h-36 w-full flex items-center justify-center overflow-hidden">
+                <img
+                  src="/images/velmo-drink-morango.png"
+                  alt="Velmo Black Drink Morango"
+                  className="h-full w-auto object-contain drop-shadow-[0_10px_20px_rgba(255,30,86,0.3)] hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <span className="mt-2 text-xs font-bold text-white">Velmo Drink</span>
+              <span className="text-[10px] text-rose-300 font-semibold">Saciedade & Drenagem</span>
+            </div>
+
           </div>
 
           {/* Main VIP WhatsApp Button */}
