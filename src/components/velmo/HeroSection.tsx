@@ -144,40 +144,51 @@ export function HeroSection() {
                 </span>
               </div>
 
-              {/* Product Photo Showcase of the 2 Products */}
+              {/* Product Real Photo Duo Showcase */}
               <div className="relative my-4 flex items-center justify-center">
-                <div className="relative w-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#180a12] via-[#0d0f14] to-[#08090c] border border-rose-500/40 p-2 sm:p-3 shadow-[0_0_25px_rgba(255,30,86,0.25)]">
+                <div className="relative w-full rounded-2xl bg-gradient-to-b from-[#180a12] via-[#0d0f14] to-[#08090c] border border-rose-500/40 p-3 sm:p-4 shadow-[0_0_30px_rgba(255,30,86,0.25)]">
                   
-                  {/* Photo Container */}
-                  <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden bg-zinc-950 flex items-center justify-center group">
-                    <img
-                      src="/images/velmo-duo-morango.png"
-                      alt="Velmo Black Cápsulas e Velmo Drink Morango Silvestre"
-                      className="h-full w-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
-                      onError={(e) => {
-                        e.currentTarget.src = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&auto=format&fit=crop&q=80";
-                      }}
-                    />
+                  {/* Both Real Products Side-by-Side */}
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 items-center justify-center py-2">
                     
-                    {/* Realistic Overlay Badges */}
-                    <div className="absolute top-2 left-2 flex flex-col gap-1 pointer-events-none">
-                      <span className="rounded-full bg-rose-600/90 backdrop-blur-md px-2.5 py-0.5 text-[9px] sm:text-[10px] font-black text-white uppercase tracking-wider shadow-lg">
-                        💊 Cápsulas (60 caps)
-                      </span>
-                      <span className="rounded-full bg-red-700/90 backdrop-blur-md px-2.5 py-0.5 text-[9px] sm:text-[10px] font-black text-white uppercase tracking-wider shadow-lg">
-                        🍓 Drink Morango (150g)
-                      </span>
+                    {/* Real Cápsulas Image Card */}
+                    <div className="relative flex flex-col items-center text-center p-2 rounded-xl bg-black/60 border border-cyan-500/30 shadow-lg animate-float">
+                      <div className="absolute -top-2 px-2 py-0.5 rounded-full bg-cyan-400 text-black text-[9px] font-black uppercase tracking-wider shadow-md">
+                        60 Cápsulas
+                      </div>
+                      <div className="h-32 sm:h-44 w-full flex items-center justify-center overflow-hidden my-1">
+                        <img
+                          src="/images/velmo-capsulas.jpg"
+                          alt="Velmo Black 60 Cápsulas"
+                          className="h-full w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,229,255,0.25)]"
+                        />
+                      </div>
+                      <span className="font-extrabold text-xs text-white">VELMO BLACK</span>
+                      <span className="text-[9px] sm:text-[10px] text-cyan-300 font-semibold">Termogênico Puro</span>
                     </div>
 
-                    <div className="absolute bottom-2 right-2 rounded-lg bg-black/85 backdrop-blur-md px-2.5 py-1 border border-rose-500/50 text-[10px] sm:text-[11px] font-extrabold text-rose-300 shadow-xl">
-                      Combo Duo Oficial
+                    {/* Real Drink Morango Image Card */}
+                    <div className="relative flex flex-col items-center text-center p-2 rounded-xl bg-black/60 border border-rose-500/40 shadow-lg animate-float-delayed">
+                      <div className="absolute -top-2 px-2 py-0.5 rounded-full bg-rose-500 text-white text-[9px] font-black uppercase tracking-wider shadow-md">
+                        🍓 Morango 150g
+                      </div>
+                      <div className="h-32 sm:h-44 w-full flex items-center justify-center overflow-hidden my-1">
+                        <img
+                          src="/images/velmo-drink-morango.jpg"
+                          alt="Velmo Black Drink Sabor Morango"
+                          className="h-full w-auto object-contain drop-shadow-[0_10px_20px_rgba(255,30,86,0.3)]"
+                        />
+                      </div>
+                      <span className="font-extrabold text-xs text-white">VELMO DRINK</span>
+                      <span className="text-[9px] sm:text-[10px] text-rose-300 font-semibold">Saciedade & Drenagem</span>
                     </div>
+
                   </div>
 
-                  {/* Caption underneath photo */}
-                  <div className="mt-2.5 flex items-center justify-between text-[11px] sm:text-xs px-1">
-                    <span className="font-extrabold text-white">Protocolo Duo Black</span>
-                    <span className="text-[10px] sm:text-[11px] font-bold text-rose-400">Morango Silvestre + Laranja Moro</span>
+                  {/* Caption underneath */}
+                  <div className="mt-3 pt-2.5 border-t border-zinc-800 flex items-center justify-between text-[11px] sm:text-xs px-1">
+                    <span className="font-extrabold text-white">Protocolo Duo Black Oficial</span>
+                    <span className="text-[10px] sm:text-[11px] font-bold text-rose-400">Cápsulas + Drink Morango</span>
                   </div>
 
                 </div>

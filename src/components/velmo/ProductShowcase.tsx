@@ -130,29 +130,35 @@ export function ProductShowcase() {
                 </div>
               </div>
 
-              {/* Right Visual Graphic */}
+              {/* Right Visual Graphic with Real Images */}
               <div className="lg:col-span-5 flex flex-col items-center justify-center">
                 <div className="relative w-full max-w-sm rounded-2xl sm:rounded-3xl bg-zinc-950 p-4 sm:p-6 border border-rose-500/40 shadow-xl">
                   <div className="absolute -top-2.5 right-3 rounded-full bg-rose-500 px-2.5 py-0.5 text-[10px] font-black text-white uppercase shadow-md">
                     Kit Campeão
                   </div>
-                  <div className="flex items-center justify-center gap-3 py-4 sm:py-6">
-                    <div className="w-28 sm:w-32 text-center p-2.5 sm:p-3 rounded-xl bg-zinc-900 border border-rose-500/40">
-                      <div className="h-12 w-12 sm:h-14 sm:w-14 mx-auto rounded-full bg-rose-500/20 flex items-center justify-center border border-rose-400/40 mb-1.5">
-                        <span className="text-base sm:text-lg font-black text-white">60</span>
+                  <div className="grid grid-cols-2 gap-3 py-3 sm:py-5 items-center">
+                    <div className="text-center p-2 rounded-xl bg-black/60 border border-cyan-500/30">
+                      <div className="h-28 sm:h-36 w-full flex items-center justify-center overflow-hidden mb-1">
+                        <img
+                          src="/images/velmo-capsulas.jpg"
+                          alt="Velmo Black Cápsulas"
+                          className="h-full w-auto object-contain drop-shadow-[0_5px_15px_rgba(0,229,255,0.2)]"
+                        />
                       </div>
-                      <span className="font-bold text-[11px] sm:text-xs text-white block">Cápsulas</span>
-                      <span className="text-[9px] sm:text-[10px] text-rose-400">Laranja Moro</span>
+                      <span className="font-bold text-[11px] text-white block">Cápsulas</span>
+                      <span className="text-[9px] text-cyan-400">60 caps • Termogênico</span>
                     </div>
 
-                    <div className="text-rose-500 font-black text-xl">+</div>
-
-                    <div className="w-28 sm:w-32 text-center p-2.5 sm:p-3 rounded-xl bg-zinc-900 border border-red-600/40">
-                      <div className="h-12 w-12 sm:h-14 sm:w-14 mx-auto rounded-full bg-red-600/20 flex items-center justify-center border border-red-500/40 mb-1.5">
-                        <span className="text-base sm:text-lg font-black text-white">150g</span>
+                    <div className="text-center p-2 rounded-xl bg-black/60 border border-rose-500/40">
+                      <div className="h-28 sm:h-36 w-full flex items-center justify-center overflow-hidden mb-1">
+                        <img
+                          src="/images/velmo-drink-morango.jpg"
+                          alt="Velmo Black Drink Morango"
+                          className="h-full w-auto object-contain drop-shadow-[0_5px_15px_rgba(255,30,86,0.25)]"
+                        />
                       </div>
-                      <span className="font-bold text-[11px] sm:text-xs text-white block">Drink Morango</span>
-                      <span className="text-[9px] sm:text-[10px] text-rose-300">Fibras & Detox</span>
+                      <span className="font-bold text-[11px] text-white block">Drink Morango</span>
+                      <span className="text-[9px] text-rose-400">150g • Saciedade & Detox</span>
                     </div>
                   </div>
 
@@ -217,10 +223,13 @@ export function ProductShowcase() {
               </div>
 
               <div className="lg:col-span-5 flex flex-col items-center justify-center">
-                <div className="w-full max-w-sm rounded-2xl sm:rounded-3xl bg-zinc-950 p-5 sm:p-6 border border-rose-500/30 text-center shadow-xl">
-                  <div className="h-20 w-20 sm:h-24 sm:w-24 mx-auto rounded-full bg-gradient-to-tr from-rose-500/20 to-red-600/40 flex items-center justify-center border border-rose-400/40 mb-3">
-                    <span className="text-2xl sm:text-3xl font-black text-white">60</span>
-                    <span className="text-[10px] text-rose-300 font-bold ml-1">CAPS</span>
+                <div className="w-full max-w-sm rounded-2xl sm:rounded-3xl bg-zinc-950 p-4 sm:p-6 border border-rose-500/30 text-center shadow-xl">
+                  <div className="h-44 sm:h-56 w-full flex items-center justify-center overflow-hidden my-2">
+                    <img
+                      src="/images/velmo-capsulas.jpg"
+                      alt="Frasco Velmo Black 60 Cápsulas"
+                      className="h-full w-auto object-contain drop-shadow-[0_10px_25px_rgba(0,229,255,0.25)]"
+                    />
                   </div>
                   <h4 className="text-base sm:text-lg font-extrabold text-white">Frasco 60 Cápsulas</h4>
                   <p className="text-[11px] text-zinc-400 mt-0.5">Tratamento para 30 dias (2 caps/dia)</p>
@@ -298,10 +307,13 @@ export function ProductShowcase() {
               </div>
 
               <div className="lg:col-span-5 flex flex-col items-center justify-center">
-                <div className="w-full max-w-sm rounded-2xl sm:rounded-3xl bg-zinc-950 p-5 sm:p-6 border border-rose-500/40 text-center shadow-xl">
-                  <div className="h-20 w-20 sm:h-24 sm:w-24 mx-auto rounded-full bg-gradient-to-tr from-rose-500/30 to-red-600/50 flex items-center justify-center border border-rose-400/50 mb-3">
-                    <span className="text-2xl sm:text-3xl font-black text-white">150</span>
-                    <span className="text-[10px] text-rose-200 font-bold ml-1">G</span>
+                <div className="w-full max-w-sm rounded-2xl sm:rounded-3xl bg-zinc-950 p-4 sm:p-6 border border-rose-500/40 text-center shadow-xl">
+                  <div className="h-44 sm:h-56 w-full flex items-center justify-center overflow-hidden my-2">
+                    <img
+                      src="/images/velmo-drink-morango.jpg"
+                      alt="Pote Velmo Black Drink Sabor Morango 150g"
+                      className="h-full w-auto object-contain drop-shadow-[0_10px_25px_rgba(255,30,86,0.3)]"
+                    />
                   </div>
                   <h4 className="text-base sm:text-lg font-extrabold text-white">Pote 150g Solúvel</h4>
                   <p className="text-[11px] text-zinc-400 mt-0.5">Rende até 30 doses refrescantes</p>

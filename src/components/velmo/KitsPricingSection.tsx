@@ -115,12 +115,55 @@ export function KitsPricingSection() {
                 <h3 className="text-lg sm:text-xl font-black text-white">{kit.name}</h3>
                 <p className="text-[11px] sm:text-xs text-zinc-400">{kit.subtitle}</p>
 
-                <div className="mt-3 rounded-xl bg-zinc-900/80 p-2.5 border border-zinc-800 text-[11px] sm:text-xs font-bold text-rose-300">
+                {/* Kit Product Visual Thumbnail */}
+                <div className="my-2 p-2 rounded-xl bg-black/50 border border-zinc-800/80 flex items-center justify-center gap-2">
+                  {kit.id === "start" && (
+                    <div className="h-20 flex items-center justify-center">
+                      <img
+                        src="/images/velmo-capsulas.jpg"
+                        alt="Velmo Black Cápsulas"
+                        className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.2)]"
+                      />
+                    </div>
+                  )}
+                  {kit.id === "duo-3" && (
+                    <div className="h-20 flex items-center justify-center gap-2">
+                      <img
+                        src="/images/velmo-capsulas.jpg"
+                        alt="Velmo Black Cápsulas"
+                        className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.2)]"
+                      />
+                      <span className="text-rose-500 font-black text-sm">+</span>
+                      <img
+                        src="/images/velmo-drink-morango.jpg"
+                        alt="Velmo Black Drink Morango"
+                        className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(255,30,86,0.25)]"
+                      />
+                    </div>
+                  )}
+                  {kit.id === "duo-5" && (
+                    <div className="h-20 flex items-center justify-center gap-2">
+                      <img
+                        src="/images/velmo-capsulas.jpg"
+                        alt="Velmo Black Cápsulas"
+                        className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.2)]"
+                      />
+                      <span className="text-amber-400 font-black text-sm">+</span>
+                      <img
+                        src="/images/velmo-drink-morango.jpg"
+                        alt="Velmo Black Drink Morango"
+                        className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(255,30,86,0.25)]"
+                      />
+                    </div>
+                  )}
+                </div>
+
+                <div className="rounded-xl bg-zinc-900/80 p-2 border border-zinc-800 text-[11px] font-bold text-rose-300">
                   📦 {kit.pots}
                 </div>
 
-                <div className="py-1">
-                  <span className="inline-block text-[10px] sm:text-xs font-extrabold text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded-md border border-emerald-500/30">
+                <div className="py-0.5">
+                  <span className="inline-block text-[10px] font-extrabold text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded-md border border-emerald-500/30">
                     ✓ {kit.discount}
                   </span>
                 </div>
