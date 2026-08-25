@@ -22,7 +22,6 @@ export function Navbar() {
               <span className="font-extrabold text-xl tracking-wider text-white">VELMO</span>
               <span className="font-extrabold text-xl tracking-wider text-cyan-400 drop-shadow-[0_0_12px_rgba(0,229,255,0.6)]">BLACK</span>
             </div>
-            <span className="text-[9px] uppercase font-semibold tracking-widest text-zinc-400 mt-1">Official Bio-Performance</span>
           </div>
         </a>
 
