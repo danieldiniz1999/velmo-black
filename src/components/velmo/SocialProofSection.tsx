@@ -99,7 +99,7 @@ const STORIES: Story[] = [
     waistReduction: "-13cm de cintura",
     protocol: "Protocolo Duo Morango (3 Meses)",
     testimonial: "Eliminei 15kg com saúde e sem passar fome. O suporte das consultoras no WhatsApp tirou todas as minhas dúvidas de dosagem e horários. Recomendo de olhos fechados!",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80",
+    image: "/images/beatriz-rocha.jpg",
     stars: 5,
     verified: true,
   },
