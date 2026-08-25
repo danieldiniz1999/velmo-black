@@ -71,7 +71,7 @@ const STORIES: Story[] = [
     waistReduction: "-18cm de medidas",
     protocol: "Transformação Total (5 Meses)",
     testimonial: "Minha autoestima e exames de saúde mudaram completamente. Não sinto mais aquele peso e inchaço constante depois das refeições. O melhor foi emagrecer sem perder a firmeza da pele e sem efeito sanfona.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&auto=format&fit=crop&q=80",
+    image: "/images/patricia-farias.jpg",
     stars: 5,
     verified: true,
   },
