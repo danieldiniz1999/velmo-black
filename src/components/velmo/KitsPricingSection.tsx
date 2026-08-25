@@ -120,7 +120,7 @@ export function KitsPricingSection() {
                   {kit.id === "start" && (
                     <div className="h-20 flex items-center justify-center">
                       <img
-                        src="/images/velmo-capsulas.jpg"
+                        src="/images/velmo-capsulas.png"
                         alt="Velmo Black Cápsulas"
                         className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.2)]"
                       />
@@ -129,13 +129,13 @@ export function KitsPricingSection() {
                   {kit.id === "duo-3" && (
                     <div className="h-20 flex items-center justify-center gap-2">
                       <img
-                        src="/images/velmo-capsulas.jpg"
+                        src="/images/velmo-capsulas.png"
                         alt="Velmo Black Cápsulas"
                         className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.2)]"
                       />
                       <span className="text-rose-500 font-black text-sm">+</span>
                       <img
-                        src="/images/velmo-drink-morango.jpg"
+                        src="/images/velmo-drink-morango.png"
                         alt="Velmo Black Drink Morango"
                         className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(255,30,86,0.25)]"
                       />
@@ -144,13 +144,13 @@ export function KitsPricingSection() {
                   {kit.id === "duo-5" && (
                     <div className="h-20 flex items-center justify-center gap-2">
                       <img
-                        src="/images/velmo-capsulas.jpg"
+                        src="/images/velmo-capsulas.png"
                         alt="Velmo Black Cápsulas"
                         className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.2)]"
                       />
                       <span className="text-amber-400 font-black text-sm">+</span>
                       <img
-                        src="/images/velmo-drink-morango.jpg"
+                        src="/images/velmo-drink-morango.png"
                         alt="Velmo Black Drink Morango"
                         className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(255,30,86,0.25)]"
                       />

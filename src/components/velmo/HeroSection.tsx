@@ -158,7 +158,7 @@ export function HeroSection() {
                       </div>
                       <div className="h-32 sm:h-44 w-full flex items-center justify-center overflow-hidden my-1">
                         <img
-                          src="/images/velmo-capsulas.jpg"
+                          src="/images/velmo-capsulas.png"
                           alt="Velmo Black 60 Cápsulas"
                           className="h-full w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,229,255,0.25)]"
                         />
@@ -174,7 +174,7 @@ export function HeroSection() {
                       </div>
                       <div className="h-32 sm:h-44 w-full flex items-center justify-center overflow-hidden my-1">
                         <img
-                          src="/images/velmo-drink-morango.jpg"
+                          src="/images/velmo-drink-morango.png"
                           alt="Velmo Black Drink Sabor Morango"
                           className="h-full w-auto object-contain drop-shadow-[0_10px_20px_rgba(255,30,86,0.3)]"
                         />

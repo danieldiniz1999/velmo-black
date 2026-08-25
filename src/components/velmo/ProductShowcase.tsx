@@ -140,7 +140,7 @@ export function ProductShowcase() {
                     <div className="text-center p-2 rounded-xl bg-black/60 border border-cyan-500/30">
                       <div className="h-28 sm:h-36 w-full flex items-center justify-center overflow-hidden mb-1">
                         <img
-                          src="/images/velmo-capsulas.jpg"
+                          src="/images/velmo-capsulas.png"
                           alt="Velmo Black Cápsulas"
                           className="h-full w-auto object-contain drop-shadow-[0_5px_15px_rgba(0,229,255,0.2)]"
                         />
@@ -152,7 +152,7 @@ export function ProductShowcase() {
                     <div className="text-center p-2 rounded-xl bg-black/60 border border-rose-500/40">
                       <div className="h-28 sm:h-36 w-full flex items-center justify-center overflow-hidden mb-1">
                         <img
-                          src="/images/velmo-drink-morango.jpg"
+                          src="/images/velmo-drink-morango.png"
                           alt="Velmo Black Drink Morango"
                           className="h-full w-auto object-contain drop-shadow-[0_5px_15px_rgba(255,30,86,0.25)]"
                         />
@@ -226,7 +226,7 @@ export function ProductShowcase() {
                 <div className="w-full max-w-sm rounded-2xl sm:rounded-3xl bg-zinc-950 p-4 sm:p-6 border border-rose-500/30 text-center shadow-xl">
                   <div className="h-44 sm:h-56 w-full flex items-center justify-center overflow-hidden my-2">
                     <img
-                      src="/images/velmo-capsulas.jpg"
+                      src="/images/velmo-capsulas.png"
                       alt="Frasco Velmo Black 60 Cápsulas"
                       className="h-full w-auto object-contain drop-shadow-[0_10px_25px_rgba(0,229,255,0.25)]"
                     />
@@ -310,7 +310,7 @@ export function ProductShowcase() {
                 <div className="w-full max-w-sm rounded-2xl sm:rounded-3xl bg-zinc-950 p-4 sm:p-6 border border-rose-500/40 text-center shadow-xl">
                   <div className="h-44 sm:h-56 w-full flex items-center justify-center overflow-hidden my-2">
                     <img
-                      src="/images/velmo-drink-morango.jpg"
+                      src="/images/velmo-drink-morango.png"
                       alt="Pote Velmo Black Drink Sabor Morango 150g"
                       className="h-full w-auto object-contain drop-shadow-[0_10px_25px_rgba(255,30,86,0.3)]"
                     />
