@@ -42,47 +42,47 @@ export function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="relative py-20 lg:py-28 bg-[#07080a]">
+    <section id="faq" className="relative py-12 sm:py-16 lg:py-24 bg-[#07080a]">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-rose-300">
-            <HelpCircle className="h-3.5 w-3.5" />
+        <div className="text-center max-w-2xl mx-auto space-y-3">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-rose-500/30 bg-rose-950/40 px-3 py-0.5 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-rose-300">
+            <HelpCircle className="h-3 w-3" />
             Tire Suas Dúvidas
           </div>
           
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
             Perguntas Frequentes sobre o{" "}
             <span className="strawberry-text-gradient">Velmo Black</span>
           </h2>
           
-          <p className="text-sm sm:text-base text-zinc-400">
-            Transparência total para você tomar a melhor decisão para a sua saúde e autoestima.
+          <p className="text-xs sm:text-sm text-zinc-400">
+            Transparência total para você tomar a melhor decisão para a sua saúde.
           </p>
         </div>
 
         {/* Accordion FAQ List */}
-        <div className="mt-12 space-y-4">
+        <div className="mt-8 sm:mt-12 space-y-3">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <div
                 key={index}
-                className="rounded-2xl border border-zinc-800 bg-[#0d1017] overflow-hidden transition-all duration-200 hover:border-rose-500/40"
+                className="rounded-xl sm:rounded-2xl border border-zinc-800 bg-[#0d1017] overflow-hidden transition-all duration-200 hover:border-rose-500/40"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="flex w-full items-center justify-between p-5 text-left text-sm sm:text-base font-bold text-white transition-colors"
+                  className="flex w-full items-center justify-between p-3.5 sm:p-5 text-left text-xs sm:text-base font-bold text-white transition-colors"
                 >
-                  <span className="pr-4">{faq.q}</span>
-                  <div className={`flex h-8 w-8 items-center justify-center rounded-xl bg-zinc-900 text-rose-400 flex-shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180 bg-rose-950 text-rose-300" : ""}`}>
-                    <ChevronDown className="h-4 w-4" />
+                  <span className="pr-3 leading-snug">{faq.q}</span>
+                  <div className={`flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-lg sm:rounded-xl bg-zinc-900 text-rose-400 flex-shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180 bg-rose-950 text-rose-300" : ""}`}>
+                    <ChevronDown className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="border-t border-zinc-800/80 px-5 pt-3 pb-5 text-xs sm:text-sm text-zinc-300 leading-relaxed bg-[#0a0c12]">
+                  <div className="border-t border-zinc-800/80 px-3.5 sm:px-5 pt-2.5 pb-4 sm:pb-5 text-xs sm:text-sm text-zinc-300 leading-relaxed bg-[#0a0c12]">
                     {faq.a}
                   </div>
                 )}
@@ -92,18 +92,18 @@ export function FaqSection() {
         </div>
 
         {/* Still have questions? */}
-        <div className="mt-12 text-center p-6 rounded-3xl bg-zinc-900/40 border border-zinc-800">
-          <p className="text-sm font-semibold text-zinc-300">
+        <div className="mt-8 sm:mt-10 text-center p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-zinc-900/40 border border-zinc-800">
+          <p className="text-xs sm:text-sm font-semibold text-zinc-300">
             Ainda tem alguma dúvida específica sobre o seu caso?
           </p>
           <a
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 px-6 py-3 text-xs font-bold uppercase tracking-wider btn-shimmer transition-colors"
+            className="mt-3 inline-flex items-center gap-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 px-5 py-2.5 sm:py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider btn-shimmer transition-colors"
           >
-            <WhatsAppIcon className="h-4 w-4 fill-rose-400 flex-shrink-0" />
-            <span>Conversar com nossa equipe no WhatsApp</span>
+            <WhatsAppIcon className="h-3.5 w-3.5 fill-rose-400 flex-shrink-0" />
+            <span>Conversar no WhatsApp</span>
           </a>
         </div>
 
