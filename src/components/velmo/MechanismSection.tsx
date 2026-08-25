@@ -55,7 +55,7 @@ export function MechanismSection() {
   ];
 
   return (
-    <section id="como-funciona" className="relative py-12 sm:py-16 lg:py-24 bg-[#08090d]">
+    <section id="como-funciona" className="relative pt-10 sm:pt-14 pb-4 sm:pb-6 bg-[#08090d]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

@@ -8,7 +8,7 @@ export function ProductShowcase() {
   const [selectedFlavor, setSelectedFlavor] = useState<"morango" | "tangerina">("morango");
 
   return (
-    <section id="produtos" className="relative py-12 sm:py-16 lg:py-24 bg-[#07080a]">
+    <section id="produtos" className="relative pt-4 sm:pt-6 pb-12 sm:pb-16 bg-[#07080a]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
