@@ -144,46 +144,44 @@ export function HeroSection() {
                 </span>
               </div>
 
-              {/* Product Visual Mockup Container with Floating 3D animations */}
-              <div className="relative my-6 flex items-center justify-center py-6">
-                
-                {/* Visual Graphic Representation */}
-                <div className="relative flex items-center justify-center gap-4">
+              {/* Product Photo Showcase of the 2 Products */}
+              <div className="relative my-6 flex items-center justify-center">
+                <div className="relative w-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#180a12] via-[#0d0f14] to-[#08090c] border border-rose-500/40 p-4 shadow-[0_0_35px_rgba(255,30,86,0.3)]">
                   
-                  {/* Cápsulas Pote */}
-                  <div className="relative w-36 sm:w-40 rounded-2xl bg-gradient-to-b from-zinc-900 via-[#0a0c10] to-black p-4 border border-rose-500/40 shadow-[0_0_30px_rgba(255,30,86,0.25)] flex flex-col items-center text-center animate-float">
-                    <div className="absolute -top-3 px-2.5 py-0.5 rounded-full bg-rose-500 text-[10px] font-black text-white uppercase tracking-wider shadow-md">
-                      Cápsulas
+                  {/* Photo Container */}
+                  <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden bg-zinc-950 flex items-center justify-center group">
+                    <img
+                      src="/images/velmo-duo-morango.png"
+                      alt="Velmo Black Cápsulas e Velmo Drink Morango Silvestre"
+                      className="h-full w-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => {
+                        // Fallback photographic composition if local image isn't yet placed
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&auto=format&fit=crop&q=80";
+                      }}
+                    />
+                    
+                    {/* Realistic Overlay Badges */}
+                    <div className="absolute top-3 left-3 flex flex-col gap-1.5 pointer-events-none">
+                      <span className="rounded-full bg-rose-600/90 backdrop-blur-md px-3 py-1 text-[10px] font-black text-white uppercase tracking-wider shadow-lg">
+                        💊 Cápsulas (60 caps)
+                      </span>
+                      <span className="rounded-full bg-red-700/90 backdrop-blur-md px-3 py-1 text-[10px] font-black text-white uppercase tracking-wider shadow-lg">
+                        🍓 Drink Morango (150g)
+                      </span>
                     </div>
-                    <div className="h-20 w-20 my-2 rounded-full bg-gradient-to-tr from-rose-500/20 to-red-500/40 flex items-center justify-center border border-rose-400/40">
-                      <span className="text-2xl font-black text-white">60</span>
-                      <span className="text-[10px] text-rose-300 font-bold ml-0.5">caps</span>
-                    </div>
-                    <span className="font-extrabold text-sm text-white">VELMO BLACK</span>
-                    <span className="text-[10px] font-semibold text-rose-400">Laranja Moro + Cromo</span>
-                    <div className="mt-3 w-full py-1 rounded bg-zinc-900 text-[10px] text-zinc-400 font-mono">
-                      TERMOGÊNICO
+
+                    <div className="absolute bottom-3 right-3 rounded-xl bg-black/80 backdrop-blur-md px-3 py-1.5 border border-rose-500/50 text-[11px] font-extrabold text-rose-300 shadow-xl">
+                      Combo Duo Oficial
                     </div>
                   </div>
 
-                  {/* Drink Pote Morango */}
-                  <div className="relative w-36 sm:w-40 rounded-2xl bg-gradient-to-b from-zinc-900 via-[#0a0c10] to-black p-4 border border-rose-500/50 shadow-[0_0_30px_rgba(255,30,86,0.3)] flex flex-col items-center text-center animate-float-delayed">
-                    <div className="absolute -top-3 px-2.5 py-0.5 rounded-full bg-red-600 text-[10px] font-black text-white uppercase tracking-wider shadow-md">
-                      🍓 Morango #1
-                    </div>
-                    <div className="h-20 w-20 my-2 rounded-full bg-gradient-to-tr from-rose-500/30 to-red-600/50 flex items-center justify-center border border-rose-500/50">
-                      <span className="text-2xl font-black text-white">150</span>
-                      <span className="text-[10px] text-rose-200 font-bold ml-0.5">g</span>
-                    </div>
-                    <span className="font-extrabold text-sm text-white">VELMO DRINK</span>
-                    <span className="text-[10px] font-semibold text-rose-300">Morango Silvestre</span>
-                    <div className="mt-3 w-full py-1 rounded bg-zinc-900 text-[10px] text-zinc-400 font-mono">
-                      SACIEDADE & DETOX
-                    </div>
+                  {/* Caption underneath photo */}
+                  <div className="mt-3 flex items-center justify-between text-xs px-1">
+                    <span className="font-extrabold text-white">Protocolo Duo Black</span>
+                    <span className="text-[11px] font-bold text-rose-400">Morango Silvestre + Laranja Moro</span>
                   </div>
 
                 </div>
-
               </div>
 
               {/* Product Spec Highlights */}
