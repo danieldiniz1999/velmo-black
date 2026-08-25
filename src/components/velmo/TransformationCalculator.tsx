@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Sparkles, MessageCircle, ArrowRight, Target, Flame, CheckCircle } from "lucide-react";
+import { Sparkles, ArrowRight, Target, Flame, CheckCircle } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
 export function TransformationCalculator() {
@@ -146,9 +147,9 @@ export function TransformationCalculator() {
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-8 py-4 text-sm sm:text-base font-extrabold text-black shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:shadow-[0_0_45px_rgba(0,229,255,0.7)] hover:scale-[1.02] transition-all"
+                className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-8 py-4 text-sm sm:text-base font-extrabold text-black shadow-[0_0_30px_rgba(0,229,255,0.4)] btn-shimmer hover:shadow-[0_0_45px_rgba(0,229,255,0.7)] hover:scale-[1.03] transition-all"
               >
-                <MessageCircle className="h-5 w-5 fill-black" />
+                <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
                 <span>INICIAR ESTE PROTOCOLO NO WHATSAPP</span>
               </a>
             </div>

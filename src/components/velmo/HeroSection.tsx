@@ -65,7 +65,7 @@ export function HeroSection() {
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-8 py-5 text-base sm:text-lg font-black text-black shadow-[0_0_35px_rgba(0,229,255,0.45)] transition-all duration-300 hover:shadow-[0_0_55px_rgba(0,229,255,0.75)] hover:scale-[1.03] active:scale-[0.98]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-8 py-5 text-base sm:text-lg font-black text-black shadow-[0_0_35px_rgba(0,229,255,0.45)] btn-shimmer tiffany-glow-pulse transition-all duration-300 hover:scale-[1.04] active:scale-[0.98]"
                 >
                   <WhatsAppIcon className="h-6 w-6 fill-black flex-shrink-0" />
                   <span>QUERO MEU ATENDIMENTO VIP NO WHATSAPP</span>
@@ -139,19 +139,19 @@ export function HeroSection() {
                   LINHA PREMIUM VELMO
                 </span>
                 <span className="inline-flex items-center gap-1 rounded-full bg-cyan-500/10 px-2.5 py-1 text-[11px] font-bold text-cyan-300 border border-cyan-500/30">
-                  <Flame className="h-3.5 w-3.5 text-cyan-400" />
+                  <Flame className="h-3.5 w-3.5 text-cyan-400 animate-pulse" />
                   Efeito Duo Ativo
                 </span>
               </div>
 
-              {/* Product Visual Mockup Container */}
+              {/* Product Visual Mockup Container with Floating 3D animations */}
               <div className="relative my-6 flex items-center justify-center py-6">
                 
                 {/* Visual Graphic Representation */}
                 <div className="relative flex items-center justify-center gap-4">
                   
                   {/* Cápsulas Pote */}
-                  <div className="relative w-36 sm:w-40 rounded-2xl bg-gradient-to-b from-zinc-900 via-[#0a0c10] to-black p-4 border border-cyan-500/40 shadow-[0_0_30px_rgba(0,229,255,0.25)] flex flex-col items-center text-center">
+                  <div className="relative w-36 sm:w-40 rounded-2xl bg-gradient-to-b from-zinc-900 via-[#0a0c10] to-black p-4 border border-cyan-500/40 shadow-[0_0_30px_rgba(0,229,255,0.25)] flex flex-col items-center text-center animate-float">
                     <div className="absolute -top-3 px-2.5 py-0.5 rounded-full bg-cyan-400 text-[10px] font-black text-black uppercase tracking-wider">
                       Cápsulas
                     </div>
@@ -167,7 +167,7 @@ export function HeroSection() {
                   </div>
 
                   {/* Drink Pote */}
-                  <div className="relative w-36 sm:w-40 rounded-2xl bg-gradient-to-b from-zinc-900 via-[#0a0c10] to-black p-4 border border-teal-500/40 shadow-[0_0_30px_rgba(14,217,181,0.25)] flex flex-col items-center text-center">
+                  <div className="relative w-36 sm:w-40 rounded-2xl bg-gradient-to-b from-zinc-900 via-[#0a0c10] to-black p-4 border border-teal-500/40 shadow-[0_0_30px_rgba(14,217,181,0.25)] flex flex-col items-center text-center animate-float-delayed">
                     <div className="absolute -top-3 px-2.5 py-0.5 rounded-full bg-teal-400 text-[10px] font-black text-black uppercase tracking-wider">
                       Drink Solúvel
                     </div>

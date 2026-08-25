@@ -1,4 +1,5 @@
-import { Check, X, ShieldAlert, Sparkles, MessageCircle } from "lucide-react";
+import { Check, X, ShieldAlert, Sparkles } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
 export function ComparisonTable() {
@@ -111,9 +112,9 @@ export function ComparisonTable() {
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 to-teal-400 px-8 py-4 text-sm sm:text-base font-extrabold text-black shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:shadow-[0_0_45px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
+            className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 to-teal-400 px-8 py-4 text-sm sm:text-base font-extrabold text-black shadow-[0_0_30px_rgba(0,229,255,0.4)] btn-shimmer hover:shadow-[0_0_45px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
           >
-            <MessageCircle className="h-5 w-5 fill-black" />
+            <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
             <span>ESCOLHER A FORMA SEGURA NO WHATSAPP</span>
           </a>
         </div>

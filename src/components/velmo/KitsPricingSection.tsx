@@ -144,8 +144,8 @@ export function KitsPricingSection() {
                   rel="noopener noreferrer"
                   className={`w-full flex items-center justify-center gap-2.5 rounded-2xl py-4 text-sm font-extrabold tracking-wide transition-all duration-300 ${
                     kit.highlight
-                      ? "bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 text-black shadow-[0_0_35px_rgba(0,229,255,0.4)] hover:shadow-[0_0_50px_rgba(0,229,255,0.7)] hover:scale-105"
-                      : "bg-zinc-900 hover:bg-zinc-800 text-cyan-300 border border-cyan-500/40 hover:border-cyan-400"
+                      ? "bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 text-black shadow-[0_0_35px_rgba(0,229,255,0.4)] btn-shimmer tiffany-glow-pulse hover:scale-105"
+                      : "bg-zinc-900 hover:bg-zinc-800 text-cyan-300 border border-cyan-500/40 hover:border-cyan-400 btn-shimmer hover:scale-[1.02]"
                   }`}
                 >
                   <WhatsAppIcon className="h-4 w-4 fill-current flex-shrink-0" />

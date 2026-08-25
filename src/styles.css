@@ -74,7 +74,11 @@
   }
 }
 
-/* Custom Effects for Velmo Black */
+/* ===================================================
+   Custom High-Impact Animations & Visual Effects
+   =================================================== */
+
+/* Glowing Shadows */
 .tiffany-glow {
   box-shadow: 0 0 35px -5px rgba(0, 229, 255, 0.35);
 }
@@ -83,16 +87,94 @@
   box-shadow: 0 0 60px -10px rgba(0, 229, 255, 0.45);
 }
 
+.tiffany-glow-pulse {
+  animation: pulseGlow 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 50px rgba(0, 229, 255, 0.65), 0 0 80px rgba(14, 217, 181, 0.3);
+  }
+}
+
+/* Shimmer Button Light Sweep */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 80%
+  );
+  transform: rotate(30deg) translateX(-100%);
+  animation: shimmerSweep 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+@keyframes shimmerSweep {
+  0% {
+    transform: rotate(30deg) translateX(-150%);
+  }
+  50%, 100% {
+    transform: rotate(30deg) translateX(150%);
+  }
+}
+
+/* Floating 3D Physics Animation */
+.animate-float {
+  animation: floatEffect 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatEffect 5s ease-in-out 2.5s infinite;
+}
+
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+/* Soft Breathing Pulse */
+.animate-breathe {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.92;
+  }
+}
+
+/* Text Gradient */
 .tiffany-text-gradient {
   background: linear-gradient(135deg, #ffffff 0%, #00e5ff 60%, #00dfb8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.gold-badge-gradient {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-}
-
+/* Glassmorphism Cards */
 .glass-card {
   background: rgba(13, 15, 20, 0.75);
   backdrop-filter: blur(16px);
@@ -101,45 +183,39 @@
 }
 
 .glass-card-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card-hover:hover {
-  border-color: rgba(0, 229, 255, 0.4);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px -10px rgba(0, 229, 255, 0.2);
+  border-color: rgba(0, 229, 255, 0.45);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px -10px rgba(0, 229, 255, 0.25);
 }
 
-.radial-tiffany-bg {
-  background: radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.15) 0%, rgba(7, 8, 10, 0) 70%);
+/* Gradient Border Beam */
+.border-beam {
+  position: relative;
 }
 
-@keyframes pulse-slow {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.85;
-    transform: scale(1.03);
-  }
+.border-beam::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, transparent, #00e5ff, #00dfb8, transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: borderSpin 4s linear infinite;
+  pointer-events: none;
 }
 
-.animate-pulse-slow {
-  animation: pulse-slow 3s ease-in-out infinite;
-}
-
-@keyframes shimmer {
+@keyframes borderSpin {
   0% {
-    background-position: -200% 0;
+    filter: hue-rotate(0deg);
   }
   100% {
-    background-position: 200% 0;
+    filter: hue-rotate(360deg);
   }
-}
-
-.animate-shimmer {
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0, 229, 255, 0.2) 50%, rgba(255,255,255,0) 100%);
-  background-size: 200% 100%;
-  animation: shimmer 3s infinite;
 }

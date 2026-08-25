@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { MessageCircle, Check, Flame, Sparkles, Shield, Zap, HeartHandshake } from "lucide-react";
+import { Check, Flame, Sparkles, Shield, Zap, HeartHandshake } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
 export function ProductShowcase() {
@@ -121,9 +122,9 @@ export function ProductShowcase() {
                     href={getWhatsAppUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-8 py-4 text-base font-extrabold text-black shadow-[0_0_35px_rgba(0,229,255,0.4)] hover:shadow-[0_0_50px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
+                    className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-8 py-4 text-base font-extrabold text-black shadow-[0_0_35px_rgba(0,229,255,0.4)] btn-shimmer hover:shadow-[0_0_50px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
                   >
-                    <MessageCircle className="h-5 w-5 fill-black" />
+                    <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
                     <span>GARANTIR PROTOCOLO DUO NO WHATSAPP</span>
                   </a>
                 </div>
@@ -207,9 +208,9 @@ export function ProductShowcase() {
                     href={getWhatsAppUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 to-teal-400 px-8 py-4 text-base font-extrabold text-black shadow-[0_0_35px_rgba(0,229,255,0.4)] hover:shadow-[0_0_50px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
+                    className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 to-teal-400 px-8 py-4 text-base font-extrabold text-black shadow-[0_0_35px_rgba(0,229,255,0.4)] btn-shimmer hover:shadow-[0_0_50px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
                   >
-                    <MessageCircle className="h-5 w-5 fill-black" />
+                    <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
                     <span>SOLICITAR VELMO BLACK CÁPSULAS NO WHATSAPP</span>
                   </a>
                 </div>
@@ -288,9 +289,9 @@ export function ProductShowcase() {
                     href={getWhatsAppUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-teal-400 to-cyan-400 px-8 py-4 text-base font-extrabold text-black shadow-[0_0_35px_rgba(14,217,181,0.4)] hover:shadow-[0_0_50px_rgba(14,217,181,0.7)] hover:scale-105 transition-all"
+                    className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-teal-400 to-cyan-400 px-8 py-4 text-base font-extrabold text-black shadow-[0_0_35px_rgba(14,217,181,0.4)] btn-shimmer hover:shadow-[0_0_50px_rgba(14,217,181,0.7)] hover:scale-105 transition-all"
                   >
-                    <MessageCircle className="h-5 w-5 fill-black" />
+                    <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
                     <span>PEDIR VELMO DRINK NO WHATSAPP</span>
                   </a>
                 </div>
