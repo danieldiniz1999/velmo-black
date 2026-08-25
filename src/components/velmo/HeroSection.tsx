@@ -89,7 +89,7 @@ export function HeroSection() {
               <div className="flex -space-x-2">
                 <img
                   className="inline-block h-10 w-10 rounded-full ring-2 ring-cyan-500/50 object-cover"
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80"
                   alt="Cliente satisfeita"
                 />
                 <img

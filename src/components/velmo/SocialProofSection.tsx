@@ -28,7 +28,7 @@ export function SocialProofSection() {
       text: "O Drink sabor Tangerina é simplesmente maravilhoso e refrescante! Tomo geladinho e fico sem fome a tarde inteira. Foi a melhor escolha que fiz esse ano, recomendo de olhos fechados!",
       stars: 5,
       product: "Velmo Black Drink",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
     },
   ];
 
