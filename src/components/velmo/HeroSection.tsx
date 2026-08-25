@@ -1,4 +1,5 @@
-import { MessageCircle, CheckCircle2, Star, Zap, Shield, Sparkles, Flame } from "lucide-react";
+import { CheckCircle2, Star, Zap, Shield, Sparkles, Flame } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
 export function HeroSection() {
@@ -66,7 +67,7 @@ export function HeroSection() {
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-8 py-5 text-base sm:text-lg font-black text-black shadow-[0_0_35px_rgba(0,229,255,0.45)] transition-all duration-300 hover:shadow-[0_0_55px_rgba(0,229,255,0.75)] hover:scale-[1.03] active:scale-[0.98]"
                 >
-                  <MessageCircle className="h-6 w-6 fill-black" />
+                  <WhatsAppIcon className="h-6 w-6 fill-black flex-shrink-0" />
                   <span>QUERO MEU ATENDIMENTO VIP NO WHATSAPP</span>
                 </a>
               </div>
@@ -212,7 +213,7 @@ export function HeroSection() {
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-cyan-400 border border-cyan-500/30 py-3 text-xs font-bold tracking-wider uppercase transition-colors"
                 >
-                  <MessageCircle className="h-4 w-4" />
+                  <WhatsAppIcon className="h-4 w-4 fill-cyan-400 flex-shrink-0" />
                   <span>Consultar Lote no WhatsApp</span>
                 </a>
               </div>

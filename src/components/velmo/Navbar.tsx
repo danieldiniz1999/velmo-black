@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { MessageCircle, Menu, X, Sparkles } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl, VELMO_WHATSAPP_DISPLAY } from "../../lib/whatsapp";
 
 export function Navbar() {
@@ -67,7 +68,7 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-bold text-black shadow-[0_0_25px_rgba(0,229,255,0.4)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(0,229,255,0.7)] hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
           >
-            <MessageCircle className="h-4 w-4 fill-black flex-shrink-0" />
+            <WhatsAppIcon className="h-4 w-4 fill-black flex-shrink-0" />
             <span>Falar no WhatsApp</span>
           </a>
         </div>
@@ -105,7 +106,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 to-teal-400 py-3 text-center text-sm font-bold text-black shadow-[0_0_20px_rgba(0,229,255,0.4)]"
             >
-              <MessageCircle className="h-5 w-5 fill-black" />
+              <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
               <span>Chamar no WhatsApp ({VELMO_WHATSAPP_DISPLAY})</span>
             </a>
           </div>

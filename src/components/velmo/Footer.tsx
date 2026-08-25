@@ -1,4 +1,5 @@
-import { MessageCircle, ShieldCheck, Lock, Truck, Heart } from "lucide-react";
+import { ShieldCheck, Lock, Truck, Heart } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl, VELMO_WHATSAPP_DISPLAY } from "../../lib/whatsapp";
 
 export function Footer() {
@@ -66,7 +67,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-bold text-sm bg-cyan-950/50 px-3 py-2 rounded-xl border border-cyan-500/30"
               >
-                <MessageCircle className="h-4 w-4 fill-cyan-400 text-black" />
+                <WhatsAppIcon className="h-4 w-4 fill-cyan-400 flex-shrink-0" />
                 <span>{VELMO_WHATSAPP_DISPLAY}</span>
               </a>
             </div>

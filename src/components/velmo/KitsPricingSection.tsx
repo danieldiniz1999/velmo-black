@@ -1,4 +1,5 @@
-import { Check, Flame, MessageCircle, ShieldCheck, Sparkles, Star, Truck } from "lucide-react";
+import { Check, Flame, ShieldCheck, Sparkles, Star, Truck } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
 export function KitsPricingSection() {
@@ -147,7 +148,7 @@ export function KitsPricingSection() {
                       : "bg-zinc-900 hover:bg-zinc-800 text-cyan-300 border border-cyan-500/40 hover:border-cyan-400"
                   }`}
                 >
-                  <MessageCircle className="h-4 w-4 fill-current" />
+                  <WhatsAppIcon className="h-4 w-4 fill-current flex-shrink-0" />
                   <span>{kit.ctaText}</span>
                 </a>
 
