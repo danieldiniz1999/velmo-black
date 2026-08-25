@@ -8,7 +8,7 @@ import { ProductShowcase } from "../components/velmo/ProductShowcase";
 import { TransformationCalculator } from "../components/velmo/TransformationCalculator";
 import { ComparisonTable } from "../components/velmo/ComparisonTable";
 import { SocialProofSection } from "../components/velmo/SocialProofSection";
-import { KitsPricingSection } from "../components/velmo/KitsPricingSection";
+import { VipConsultationSection } from "../components/velmo/VipConsultationSection";
 import { GuaranteeSection } from "../components/velmo/GuaranteeSection";
 import { FaqSection } from "../components/velmo/FaqSection";
 import { FloatingWhatsApp } from "../components/velmo/FloatingWhatsApp";
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-[#07080a] text-zinc-100 selection:bg-cyan-400 selection:text-black">
+    <div className="min-h-screen bg-[#07080a] text-zinc-100 selection:bg-rose-500 selection:text-white">
       {/* 1. Top Urgency Announcement Bar */}
       <AnnouncementBar />
 
@@ -49,8 +49,8 @@ function Index() {
       {/* 9. Social Proof & Real WhatsApp Testimonials */}
       <SocialProofSection />
 
-      {/* 10. Treatment Kits & Pricing */}
-      <KitsPricingSection />
+      {/* 10. VIP Personalized WhatsApp Consultation Flow */}
+      <VipConsultationSection />
 
       {/* 11. Security & Quality Guarantee */}
       <GuaranteeSection />

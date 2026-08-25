@@ -43,8 +43,8 @@ export function Navbar() {
           <a href="#depoimentos" className="whitespace-nowrap transition-colors hover:text-rose-400">
             Depoimentos
           </a>
-          <a href="#kits" className="whitespace-nowrap transition-colors hover:text-rose-400">
-            Kits & Preços
+          <a href="#atendimento" className="whitespace-nowrap transition-colors hover:text-rose-400">
+            Atendimento VIP
           </a>
           <a href="#faq" className="whitespace-nowrap transition-colors hover:text-rose-400">
             FAQ
@@ -93,8 +93,8 @@ export function Navbar() {
               Simulador de Metas
             </a>
             <a onClick={() => setIsOpen(false)} href="#comparativo" className="hover:text-rose-400 py-1">Diferenciais Velmo Black</a>
-            <a onClick={() => setIsOpen(false)} href="#depoimentos" className="hover:text-rose-400 py-1">Depoimentos & Resultados</a>
-            <a onClick={() => setIsOpen(false)} href="#kits" className="hover:text-rose-400 py-1">Kits Promocionais</a>
+            <a onClick={() => setIsOpen(false)} href="#depoimentos" className="hover:text-rose-400 py-1">Depoimentos Reais</a>
+            <a onClick={() => setIsOpen(false)} href="#atendimento" className="hover:text-rose-400 py-1 font-bold text-rose-400">Atendimento Consultivo VIP</a>
             <a onClick={() => setIsOpen(false)} href="#faq" className="hover:text-rose-400 py-1">Perguntas Frequentes</a>
           </nav>
 

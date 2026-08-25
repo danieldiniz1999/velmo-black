@@ -47,7 +47,7 @@ export function Footer() {
               <li><a href="#como-funciona" className="hover:text-rose-400 transition-colors">Como Funciona a Fórmula</a></li>
               <li><a href="#simulador" className="hover:text-rose-400 transition-colors">Simulador de Metas</a></li>
               <li><a href="#depoimentos" className="hover:text-rose-400 transition-colors">Resultados & Prova Social</a></li>
-              <li><a href="#kits" className="hover:text-rose-400 transition-colors">Kits e Preços</a></li>
+              <li><a href="#atendimento" className="hover:text-rose-400 transition-colors">Atendimento VIP WhatsApp</a></li>
               <li><a href="#faq" className="hover:text-rose-400 transition-colors">Perguntas Frequentes</a></li>
             </ul>
           </div>
