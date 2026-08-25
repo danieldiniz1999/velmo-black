@@ -92,64 +92,64 @@ export function VipConsultationSection() {
           })}
         </div>
 
-        {/* Central VIP Call to Action Box */}
-        <div className="mt-8 sm:mt-12 rounded-2xl sm:rounded-3xl border-2 border-rose-500/40 bg-gradient-to-b from-[#180a12] via-[#0e0a0d] to-[#07080a] p-6 sm:p-10 shadow-[0_0_40px_rgba(255,30,86,0.25)] text-center relative overflow-hidden">
+        {/* Central VIP Call to Action Box (Compact & Refined) */}
+        <div className="mt-6 sm:mt-8 max-w-2xl mx-auto rounded-2xl sm:rounded-3xl border border-rose-500/40 bg-gradient-to-b from-[#160a10] via-[#0d090c] to-[#07080a] p-4 sm:p-6 shadow-[0_0_30px_rgba(255,30,86,0.2)] text-center relative overflow-hidden">
           
           {/* Status Indicator */}
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-950/60 px-3 py-1 text-[11px] sm:text-xs font-bold text-emerald-300 border border-emerald-500/40 mb-4">
-            <span className="relative flex h-2 w-2">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-950/70 px-2.5 py-0.5 text-[10px] sm:text-[11px] font-bold text-emerald-300 border border-emerald-500/40 mb-2.5">
+            <span className="relative flex h-1.5 w-1.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
             </span>
-            <span>Equipe de Consultoria Pronta para Atender</span>
+            <span>Equipe Pronta para Atender</span>
           </div>
 
-          <h3 className="text-xl sm:text-3xl lg:text-4xl font-black text-white leading-tight max-w-2xl mx-auto">
-            Receba sua orientação personalizada e garanta as ofertas exclusivas de hoje
+          <h3 className="text-base sm:text-xl font-black text-white leading-tight max-w-lg mx-auto">
+            Receba sua orientação personalizada e garanta as ofertas de hoje
           </h3>
 
-          <p className="mt-2 text-xs sm:text-sm lg:text-base text-zinc-300 max-w-xl mx-auto">
-            Clique no botão abaixo para conversar diretamente com uma consultora especializada no WhatsApp oficial da Velmo Black.
+          <p className="mt-1.5 text-[11px] sm:text-xs text-zinc-300 max-w-md mx-auto">
+            Converse diretamente com uma especialista no WhatsApp oficial da Velmo Black.
           </p>
 
           {/* Mini product visual preview */}
-          <div className="my-5 flex items-center justify-center gap-3 sm:gap-4">
-            <div className="h-16 sm:h-20 flex items-center justify-center p-1.5 rounded-xl bg-black/50 border border-cyan-500/30">
+          <div className="my-3 flex items-center justify-center gap-2.5">
+            <div className="h-11 sm:h-12 flex items-center justify-center p-1 rounded-lg bg-black/50 border border-cyan-500/30">
               <img
                 src="/images/velmo-capsulas.png"
                 alt="Velmo Black Cápsulas"
-                className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.2)]"
+                className="h-full w-auto object-contain drop-shadow-[0_2px_8px_rgba(0,229,255,0.2)]"
               />
             </div>
-            <span className="text-rose-500 font-black text-lg">+</span>
-            <div className="h-16 sm:h-20 flex items-center justify-center p-1.5 rounded-xl bg-black/50 border border-rose-500/40">
+            <span className="text-rose-500 font-bold text-sm">+</span>
+            <div className="h-11 sm:h-12 flex items-center justify-center p-1 rounded-lg bg-black/50 border border-rose-500/40">
               <img
                 src="/images/velmo-drink-morango.png"
                 alt="Velmo Black Drink Morango"
-                className="h-full w-auto object-contain drop-shadow-[0_4px_10px_rgba(255,30,86,0.25)]"
+                className="h-full w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,30,86,0.25)]"
               />
             </div>
           </div>
 
           {/* Main VIP WhatsApp Button */}
-          <div className="max-w-md mx-auto">
+          <div className="max-w-sm mx-auto">
             <a
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-rose-500 via-red-500 to-rose-600 px-6 sm:px-8 py-4 text-sm sm:text-base font-black text-white shadow-[0_0_30px_rgba(255,30,86,0.5)] btn-shimmer strawberry-glow-pulse transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-500 via-red-500 to-rose-600 px-4 sm:px-6 py-3 text-xs sm:text-sm font-extrabold text-white shadow-[0_0_20px_rgba(255,30,86,0.4)] btn-shimmer strawberry-glow-pulse transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
             >
-              <WhatsAppIcon className="h-5 w-5 fill-white flex-shrink-0" />
-              <span>CONVERSAR COM ESPECIALISTA NO WHATSAPP</span>
+              <WhatsAppIcon className="h-4 w-4 fill-white flex-shrink-0" />
+              <span>CONVERSAR COM ESPECIALISTA</span>
             </a>
 
-            <div className="mt-3 flex flex-wrap items-center justify-center gap-4 text-[11px] text-zinc-400">
-              <div className="flex items-center gap-1.5">
-                <ShieldCheck className="h-3.5 w-3.5 text-rose-400" />
-                <span>Atendimento 100% Humano e Sigiloso</span>
+            <div className="mt-2 flex flex-wrap items-center justify-center gap-3 text-[10px] text-zinc-400">
+              <div className="flex items-center gap-1">
+                <ShieldCheck className="h-3 w-3 text-rose-400" />
+                <span>Atendimento Humano e Sigiloso</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <Clock className="h-3.5 w-3.5 text-rose-400" />
+              <div className="flex items-center gap-1">
+                <Clock className="h-3 w-3 text-rose-400" />
                 <span>Resposta Rápida</span>
               </div>
             </div>
