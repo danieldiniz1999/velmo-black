@@ -71,9 +71,6 @@ export function Footer() {
                 <span>{VELMO_WHATSAPP_DISPLAY}</span>
               </a>
             </div>
-            <p className="text-[11px] text-zinc-500">
-              Segunda a Sábado das 08h às 20h
-            </p>
           </div>
 
         </div>
