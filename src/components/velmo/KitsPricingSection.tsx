@@ -142,14 +142,14 @@ export function KitsPricingSection() {
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-full flex items-center justify-center gap-2.5 rounded-2xl py-4 text-sm font-extrabold tracking-wide transition-all duration-300 ${
+                  className={`w-full flex items-center justify-center gap-3 rounded-2xl px-5 sm:px-6 py-4 text-xs sm:text-sm font-extrabold tracking-wide text-center leading-snug transition-all duration-300 ${
                     kit.highlight
                       ? "bg-gradient-to-r from-rose-500 via-red-500 to-rose-600 text-white shadow-[0_0_35px_rgba(255,30,86,0.45)] btn-shimmer strawberry-glow-pulse hover:scale-105"
                       : "bg-zinc-900 hover:bg-zinc-800 text-rose-300 border border-rose-500/40 hover:border-rose-400 btn-shimmer hover:scale-[1.02]"
                   }`}
                 >
                   <WhatsAppIcon className="h-4 w-4 fill-current flex-shrink-0" />
-                  <span>{kit.ctaText}</span>
+                  <span className="text-balance">{kit.ctaText}</span>
                 </a>
 
                 <div className="mt-3 flex items-center justify-center gap-2 text-[11px] text-zinc-500">
