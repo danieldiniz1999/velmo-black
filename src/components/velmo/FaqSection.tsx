@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ChevronDown, MessageCircle, HelpCircle, Sparkles } from "lucide-react";
+import { ChevronDown, HelpCircle } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
 export function FaqSection() {
@@ -7,8 +8,8 @@ export function FaqSection() {
 
   const faqs = [
     {
-      q: "Como devo tomar o Velmo Black (Cápsulas e Drink)?",
-      a: "Recomenda-se tomar 2 cápsulas de Velmo Black pela manhã (junto com água ou café da manhã) para despertar o metabolismo e queimar gordura durante o dia. O Velmo Black Drink deve ser dissolvido (1 colher dosadora) em 200ml a 300ml de água bem gelada à tarde ou antes das principais refeições para promover saciedade prolongada e efeito detox.",
+      q: "Como devo tomar o Velmo Black (Cápsulas e Drink Morango)?",
+      a: "Recomenda-se tomar 2 cápsulas de Velmo Black pela manhã (junto com água ou café da manhã) para despertar o metabolismo e queimar gordura durante o dia. O Velmo Black Drink sabor Morango Silvestre deve ser dissolvido (1 colher dosadora) em 200ml a 300ml de água bem gelada à tarde ou antes das principais refeições para promover saciedade prolongada e efeito detox.",
     },
     {
       q: "O Velmo Black possui algum efeito colateral ou causa taquicardia?",
@@ -46,14 +47,14 @@ export function FaqSection() {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-cyan-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-rose-300">
             <HelpCircle className="h-3.5 w-3.5" />
             Tire Suas Dúvidas
           </div>
           
           <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
             Perguntas Frequentes sobre o{" "}
-            <span className="tiffany-text-gradient">Velmo Black</span>
+            <span className="strawberry-text-gradient">Velmo Black</span>
           </h2>
           
           <p className="text-sm sm:text-base text-zinc-400">
@@ -68,14 +69,14 @@ export function FaqSection() {
             return (
               <div
                 key={index}
-                className="rounded-2xl border border-zinc-800 bg-[#0d1017] overflow-hidden transition-all duration-200 hover:border-cyan-500/30"
+                className="rounded-2xl border border-zinc-800 bg-[#0d1017] overflow-hidden transition-all duration-200 hover:border-rose-500/40"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                   className="flex w-full items-center justify-between p-5 text-left text-sm sm:text-base font-bold text-white transition-colors"
                 >
                   <span className="pr-4">{faq.q}</span>
-                  <div className={`flex h-8 w-8 items-center justify-center rounded-xl bg-zinc-900 text-cyan-400 flex-shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180 bg-cyan-950" : ""}`}>
+                  <div className={`flex h-8 w-8 items-center justify-center rounded-xl bg-zinc-900 text-rose-400 flex-shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180 bg-rose-950 text-rose-300" : ""}`}>
                     <ChevronDown className="h-4 w-4" />
                   </div>
                 </button>
@@ -99,9 +100,9 @@ export function FaqSection() {
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-2 rounded-xl bg-cyan-400/10 hover:bg-cyan-400/20 text-cyan-300 border border-cyan-400/30 px-6 py-3 text-xs font-bold uppercase tracking-wider transition-colors"
+            className="mt-4 inline-flex items-center gap-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 px-6 py-3 text-xs font-bold uppercase tracking-wider btn-shimmer transition-colors"
           >
-            <MessageCircle className="h-4 w-4" />
+            <WhatsAppIcon className="h-4 w-4 fill-rose-400 flex-shrink-0" />
             <span>Conversar com nossa equipe no WhatsApp</span>
           </a>
         </div>

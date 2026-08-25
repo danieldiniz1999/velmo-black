@@ -1,4 +1,5 @@
-import { Flame, Brain, ShieldAlert, Droplets, ArrowRight, Sparkles, MessageCircle } from "lucide-react";
+import { Flame, Brain, ShieldAlert, Droplets, Sparkles } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
 export function MechanismSection() {
@@ -11,9 +12,9 @@ export function MechanismSection() {
         "Rico em antocianinas concentradas que atuam diretamente nos adipócitos, estimulando a queima da gordura visceral e abdominal profunda que resiste a dietas comuns.",
       icon: Flame,
       tag: "Queima Visceral",
-      color: "from-cyan-500/20 to-teal-500/10",
-      border: "border-cyan-500/40",
-      textAccent: "text-cyan-400",
+      color: "from-rose-500/20 to-red-500/10",
+      border: "border-rose-500/40",
+      textAccent: "text-rose-400",
     },
     {
       step: "02",
@@ -23,9 +24,9 @@ export function MechanismSection() {
         "Estabiliza os níveis de glicose no sangue, neutralizando picos de insulina que geram aquela vontade incontrolável de comer doces, pães e massas fora de hora.",
       icon: ShieldAlert,
       tag: "Zero Fome Emocional",
-      color: "from-teal-500/20 to-cyan-500/10",
-      border: "border-teal-500/40",
-      textAccent: "text-teal-300",
+      color: "from-red-500/20 to-rose-500/10",
+      border: "border-red-500/40",
+      textAccent: "text-red-400",
     },
     {
       step: "03",
@@ -35,21 +36,21 @@ export function MechanismSection() {
         "Aminoácido nobre precursor da serotonina e melatonina. Elimina o cortisol alto (hormônio do estresse que retém gordura) e combate a ansiedade noturna.",
       icon: Brain,
       tag: "Equilíbrio & Disposição",
-      color: "from-blue-500/20 to-cyan-500/10",
-      border: "border-blue-500/40",
-      textAccent: "text-blue-400",
+      color: "from-rose-500/20 to-pink-500/10",
+      border: "border-rose-500/40",
+      textAccent: "text-rose-300",
     },
     {
       step: "04",
       title: "Complexo Prebiótico do Drink",
       subtitle: "Desinchaço Celular & Saciedade Instantânea",
       description:
-        "Fibras nobres solúveis (Inulina e Polidextrose) que expandem no estômago promovendo saciedade prolongada, regulando o fluxo intestinal e drenando líquidos retidos.",
+        "Fibras nobres solúveis com extrato de Morango Silvestre que expandem no estômago, promovendo saciedade prolongada, regulando o intestino e drenando líquidos.",
       icon: Droplets,
-      tag: "Drenagem & Detox",
-      color: "from-cyan-500/20 to-emerald-500/10",
-      border: "border-cyan-500/40",
-      textAccent: "text-cyan-300",
+      tag: "Drenagem & Morango #1",
+      color: "from-red-500/20 to-rose-600/10",
+      border: "border-rose-500/40",
+      textAccent: "text-rose-400",
     },
   ];
 
@@ -59,14 +60,14 @@ export function MechanismSection() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-cyan-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-rose-300">
             <Sparkles className="h-3.5 w-3.5" />
             Engenharia Metabólica Inteligente
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Por que o Velmo Black funciona{" "}
-            <span className="tiffany-text-gradient">onde nada mais deu certo?</span>
+            <span className="strawberry-text-gradient">onde nada mais deu certo?</span>
           </h2>
           
           <p className="text-base sm:text-lg text-zinc-400">
@@ -81,7 +82,7 @@ export function MechanismSection() {
             return (
               <div
                 key={index}
-                className={`relative flex flex-col justify-between rounded-3xl bg-gradient-to-b ${item.color} p-6 sm:p-7 border ${item.border} backdrop-blur-xl shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(0,229,255,0.2)]`}
+                className={`relative flex flex-col justify-between rounded-3xl bg-gradient-to-b ${item.color} p-6 sm:p-7 border ${item.border} backdrop-blur-xl shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(255,30,86,0.25)]`}
               >
                 <div>
                   <div className="flex items-center justify-between">
@@ -119,7 +120,7 @@ export function MechanismSection() {
         </div>
 
         {/* Bottom Callout */}
-        <div className="mt-16 rounded-3xl border border-cyan-500/30 bg-gradient-to-r from-cyan-950/40 via-zinc-900/60 to-cyan-950/40 p-8 text-center max-w-4xl mx-auto shadow-[0_0_35px_rgba(0,229,255,0.15)]">
+        <div className="mt-16 rounded-3xl border border-rose-500/30 bg-gradient-to-r from-rose-950/40 via-zinc-900/60 to-rose-950/40 p-8 text-center max-w-4xl mx-auto shadow-[0_0_35px_rgba(255,30,86,0.2)]">
           <h3 className="text-xl sm:text-2xl font-black text-white">
             Pronto para sentir a leveza e a energia que você merece?
           </h3>
@@ -131,9 +132,9 @@ export function MechanismSection() {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 to-teal-400 px-8 py-4 text-sm sm:text-base font-extrabold text-black shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:shadow-[0_0_45px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
+              className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-rose-500 to-red-600 px-8 py-4 text-sm sm:text-base font-extrabold text-white shadow-[0_0_30px_rgba(255,30,86,0.4)] btn-shimmer hover:shadow-[0_0_45px_rgba(255,30,86,0.7)] hover:scale-105 transition-all"
             >
-              <MessageCircle className="h-5 w-5 fill-black" />
+              <WhatsAppIcon className="h-5 w-5 fill-white flex-shrink-0" />
               <span>FALAR COM UMA CONSULTORA NO WHATSAPP</span>
             </a>
           </div>

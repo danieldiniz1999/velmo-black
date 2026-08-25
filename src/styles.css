@@ -41,19 +41,19 @@
   --card-foreground: #f4f4f5;
   --popover: #0d0f14;
   --popover-foreground: #f4f4f5;
-  --primary: #00e5ff;
-  --primary-foreground: #050505;
+  --primary: #ff1e56;
+  --primary-foreground: #ffffff;
   --secondary: #161a22;
   --secondary-foreground: #f4f4f5;
   --muted: #1a1e27;
   --muted-foreground: #94a3b8;
-  --accent: #00dfb8;
-  --accent-foreground: #050505;
+  --accent: #f43f5e;
+  --accent-foreground: #ffffff;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
   --border: rgba(255, 255, 255, 0.08);
   --input: rgba(255, 255, 255, 0.12);
-  --ring: #00e5ff;
+  --ring: #ff1e56;
 }
 
 @layer base {
@@ -75,28 +75,28 @@
 }
 
 /* ===================================================
-   Custom High-Impact Animations & Visual Effects
+   Strawberry Red (Morango Silvestre) Luxury Theme
    =================================================== */
 
 /* Glowing Shadows */
-.tiffany-glow {
-  box-shadow: 0 0 35px -5px rgba(0, 229, 255, 0.35);
+.strawberry-glow {
+  box-shadow: 0 0 35px -5px rgba(255, 30, 86, 0.4);
 }
 
-.tiffany-glow-lg {
-  box-shadow: 0 0 60px -10px rgba(0, 229, 255, 0.45);
+.strawberry-glow-lg {
+  box-shadow: 0 0 60px -10px rgba(255, 30, 86, 0.55);
 }
 
-.tiffany-glow-pulse {
-  animation: pulseGlow 2.5s infinite alternate ease-in-out;
+.strawberry-glow-pulse {
+  animation: strawberryPulseGlow 2.5s infinite alternate ease-in-out;
 }
 
-@keyframes pulseGlow {
+@keyframes strawberryPulseGlow {
   0% {
-    box-shadow: 0 0 25px rgba(0, 229, 255, 0.3);
+    box-shadow: 0 0 25px rgba(255, 30, 86, 0.35);
   }
   100% {
-    box-shadow: 0 0 50px rgba(0, 229, 255, 0.65), 0 0 80px rgba(14, 217, 181, 0.3);
+    box-shadow: 0 0 50px rgba(255, 30, 86, 0.75), 0 0 80px rgba(225, 29, 72, 0.4);
   }
 }
 
@@ -167,9 +167,9 @@
   }
 }
 
-/* Text Gradient */
-.tiffany-text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #00e5ff 60%, #00dfb8 100%);
+/* Strawberry Text Gradient */
+.strawberry-text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #ff2d55 50%, #e11d48 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -179,7 +179,7 @@
   background: rgba(13, 15, 20, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 229, 255, 0.12);
+  border: 1px solid rgba(255, 30, 86, 0.15);
 }
 
 .glass-card-hover {
@@ -187,35 +187,18 @@
 }
 
 .glass-card-hover:hover {
-  border-color: rgba(0, 229, 255, 0.45);
+  border-color: rgba(255, 30, 86, 0.5);
   transform: translateY(-6px);
-  box-shadow: 0 16px 35px -10px rgba(0, 229, 255, 0.25);
+  box-shadow: 0 16px 35px -10px rgba(255, 30, 86, 0.3);
 }
 
-/* Gradient Border Beam */
-.border-beam {
-  position: relative;
+/* Legacy utility alias support */
+.tiffany-text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #ff2d55 50%, #e11d48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.border-beam::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(90deg, transparent, #00e5ff, #00dfb8, transparent);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: borderSpin 4s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes borderSpin {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
+.tiffany-glow-pulse {
+  animation: strawberryPulseGlow 2.5s infinite alternate ease-in-out;
 }

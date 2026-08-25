@@ -1,4 +1,4 @@
-import { ShieldCheck, Lock, Truck, Heart } from "lucide-react";
+import { ShieldCheck, Lock, Truck } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl, VELMO_WHATSAPP_DISPLAY } from "../../lib/whatsapp";
 
@@ -13,11 +13,11 @@ export function Footer() {
           {/* Col 1: Brand */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-400 to-teal-600 text-black font-black text-base shadow-[0_0_15px_rgba(0,229,255,0.3)]">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-rose-500 to-red-700 text-white font-black text-base shadow-[0_0_15px_rgba(255,30,86,0.4)]">
                 V
               </div>
               <span className="text-xl font-extrabold text-white tracking-wider">
-                VELMO <span className="text-cyan-400">BLACK</span>
+                VELMO <span className="text-rose-500">BLACK</span>
               </span>
             </div>
             
@@ -27,11 +27,11 @@ export function Footer() {
 
             <div className="flex items-center gap-3 pt-2 text-zinc-300">
               <div className="flex items-center gap-1.5 bg-zinc-900 px-3 py-1.5 rounded-lg border border-zinc-800 text-xs">
-                <ShieldCheck className="h-4 w-4 text-cyan-400" />
+                <ShieldCheck className="h-4 w-4 text-rose-500" />
                 <span>RDC ANVISA 240/2018</span>
               </div>
               <div className="flex items-center gap-1.5 bg-zinc-900 px-3 py-1.5 rounded-lg border border-zinc-800 text-xs">
-                <Lock className="h-4 w-4 text-cyan-400" />
+                <Lock className="h-4 w-4 text-rose-500" />
                 <span>Compra & Atendimento 100% Seguros</span>
               </div>
             </div>
@@ -43,12 +43,12 @@ export function Footer() {
               Navegação Rápida
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#produtos" className="hover:text-cyan-400 transition-colors">Linha de Produtos</a></li>
-              <li><a href="#como-funciona" className="hover:text-cyan-400 transition-colors">Como Funciona a Fórmula</a></li>
-              <li><a href="#simulador" className="hover:text-cyan-400 transition-colors">Simulador de Metas</a></li>
-              <li><a href="#depoimentos" className="hover:text-cyan-400 transition-colors">Resultados & Prova Social</a></li>
-              <li><a href="#kits" className="hover:text-cyan-400 transition-colors">Kits e Preços</a></li>
-              <li><a href="#faq" className="hover:text-cyan-400 transition-colors">Perguntas Frequentes</a></li>
+              <li><a href="#produtos" className="hover:text-rose-400 transition-colors">Linha de Produtos</a></li>
+              <li><a href="#como-funciona" className="hover:text-rose-400 transition-colors">Como Funciona a Fórmula</a></li>
+              <li><a href="#simulador" className="hover:text-rose-400 transition-colors">Simulador de Metas</a></li>
+              <li><a href="#depoimentos" className="hover:text-rose-400 transition-colors">Resultados & Prova Social</a></li>
+              <li><a href="#kits" className="hover:text-rose-400 transition-colors">Kits e Preços</a></li>
+              <li><a href="#faq" className="hover:text-rose-400 transition-colors">Perguntas Frequentes</a></li>
             </ul>
           </div>
 
@@ -65,9 +65,9 @@ export function Footer() {
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-bold text-sm bg-cyan-950/50 px-3 py-2 rounded-xl border border-cyan-500/30"
+                className="inline-flex items-center gap-2 text-rose-400 hover:text-rose-300 font-bold text-sm bg-rose-950/50 px-3 py-2 rounded-xl border border-rose-500/40 btn-shimmer"
               >
-                <WhatsAppIcon className="h-4 w-4 fill-cyan-400 flex-shrink-0" />
+                <WhatsAppIcon className="h-4 w-4 fill-rose-400 flex-shrink-0" />
                 <span>{VELMO_WHATSAPP_DISPLAY}</span>
               </a>
             </div>

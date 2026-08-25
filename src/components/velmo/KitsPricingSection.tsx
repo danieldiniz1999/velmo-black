@@ -11,7 +11,7 @@ export function KitsPricingSection() {
       badge: "EXPERIÊNCIA INICIAL",
       badgeColor: "bg-zinc-800 text-zinc-300 border-zinc-700",
       highlight: false,
-      pots: "1 Frasco (60 Caps) ou 1 Drink (150g)",
+      pots: "1 Frasco (60 Caps) ou 1 Drink Morango (150g)",
       benefits: [
         "Desinchaço inicial visível",
         "Primeiro destravamento metabólico",
@@ -23,12 +23,12 @@ export function KitsPricingSection() {
     },
     {
       id: "duo-3",
-      name: "Protocolo Duo 3 Meses",
+      name: "Protocolo Duo 3 Meses (Morango)",
       subtitle: "O tratamento completo para secar e não engordar mais",
-      badge: "🔥 MAIS ESCOLHIDO (87% DAS VENDAS)",
-      badgeColor: "bg-gradient-to-r from-cyan-400 to-teal-400 text-black border-cyan-300 font-black",
+      badge: "🍓 MAIS ESCOLHIDO (87% DAS VENDAS)",
+      badgeColor: "bg-gradient-to-r from-rose-500 to-red-600 text-white border-rose-400 font-black shadow-md",
       highlight: true,
-      pots: "Combo Completo: Cápsulas + Drink Solúvel",
+      pots: "Combo Completo: Cápsulas + Drink Morango Silvestre",
       benefits: [
         "Queima contínua 24h (Dia e Noite)",
         "Eliminação definitiva da gordura visceral",
@@ -62,21 +62,21 @@ export function KitsPricingSection() {
 
   return (
     <section id="kits" className="relative py-20 lg:py-32 bg-[#07080a]">
-      {/* Glow Effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+      {/* Glow Effect in Strawberry Red */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-cyan-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-rose-300">
             <Sparkles className="h-3.5 w-3.5" />
             Tratamentos Oficiais & Condições Especiais
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Escolha o seu plano de{" "}
-            <span className="tiffany-text-gradient">transformação corporal</span>
+            <span className="strawberry-text-gradient">transformação corporal</span>
           </h2>
           
           <p className="text-base text-zinc-400">
@@ -91,8 +91,8 @@ export function KitsPricingSection() {
               key={kit.id}
               className={`relative flex flex-col justify-between rounded-3xl p-6 sm:p-8 backdrop-blur-xl transition-all duration-300 ${
                 kit.highlight
-                  ? "bg-gradient-to-b from-[#0f1722] via-[#0b1018] to-[#070a0e] border-2 border-cyan-400 shadow-[0_0_50px_rgba(0,229,255,0.3)] scale-[1.03] z-10"
-                  : "bg-[#0d1017] border border-zinc-800 hover:border-cyan-500/30 shadow-xl"
+                  ? "bg-gradient-to-b from-[#190a12] via-[#0f0a0d] to-[#07080a] border-2 border-rose-500 shadow-[0_0_50px_rgba(255,30,86,0.35)] scale-[1.03] z-10"
+                  : "bg-[#0d1017] border border-zinc-800 hover:border-rose-500/40 shadow-xl"
               }`}
             >
               {/* Badge */}
@@ -115,7 +115,7 @@ export function KitsPricingSection() {
                 <h3 className="text-2xl font-black text-white">{kit.name}</h3>
                 <p className="text-xs text-zinc-400">{kit.subtitle}</p>
 
-                <div className="mt-4 rounded-xl bg-zinc-900/80 p-3 border border-zinc-800 text-xs font-bold text-cyan-300">
+                <div className="mt-4 rounded-xl bg-zinc-900/80 p-3 border border-zinc-800 text-xs font-bold text-rose-300">
                   📦 {kit.pots}
                 </div>
 
@@ -130,7 +130,7 @@ export function KitsPricingSection() {
               <div className="mt-6 space-y-3 pt-4 border-t border-zinc-800/80 flex-grow">
                 {kit.benefits.map((benefit, i) => (
                   <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-zinc-300">
-                    <Check className="h-4 w-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <Check className="h-4 w-4 text-rose-500 flex-shrink-0 mt-0.5" />
                     <span>{benefit}</span>
                   </div>
                 ))}
@@ -144,8 +144,8 @@ export function KitsPricingSection() {
                   rel="noopener noreferrer"
                   className={`w-full flex items-center justify-center gap-2.5 rounded-2xl py-4 text-sm font-extrabold tracking-wide transition-all duration-300 ${
                     kit.highlight
-                      ? "bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 text-black shadow-[0_0_35px_rgba(0,229,255,0.4)] btn-shimmer tiffany-glow-pulse hover:scale-105"
-                      : "bg-zinc-900 hover:bg-zinc-800 text-cyan-300 border border-cyan-500/40 hover:border-cyan-400 btn-shimmer hover:scale-[1.02]"
+                      ? "bg-gradient-to-r from-rose-500 via-red-500 to-rose-600 text-white shadow-[0_0_35px_rgba(255,30,86,0.45)] btn-shimmer strawberry-glow-pulse hover:scale-105"
+                      : "bg-zinc-900 hover:bg-zinc-800 text-rose-300 border border-rose-500/40 hover:border-rose-400 btn-shimmer hover:scale-[1.02]"
                   }`}
                 >
                   <WhatsAppIcon className="h-4 w-4 fill-current flex-shrink-0" />
@@ -153,7 +153,7 @@ export function KitsPricingSection() {
                 </a>
 
                 <div className="mt-3 flex items-center justify-center gap-2 text-[11px] text-zinc-500">
-                  <ShieldCheck className="h-3.5 w-3.5 text-cyan-400" />
+                  <ShieldCheck className="h-3.5 w-3.5 text-rose-400" />
                   <span>Atendimento oficial e imediato</span>
                 </div>
               </div>
@@ -165,11 +165,11 @@ export function KitsPricingSection() {
         {/* Shipping and Security Guarantee Notice */}
         <div className="mt-14 flex flex-wrap items-center justify-center gap-8 text-xs text-zinc-400">
           <div className="flex items-center gap-2">
-            <Truck className="h-4 w-4 text-cyan-400" />
+            <Truck className="h-4 w-4 text-rose-400" />
             <span>Envio com código de rastreamento pelos Correios/Transportadora</span>
           </div>
           <div className="flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4 text-cyan-400" />
+            <ShieldCheck className="h-4 w-4 text-rose-400" />
             <span>Embalagem 100% discreta e lacrada de fábrica</span>
           </div>
         </div>

@@ -7,46 +7,46 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-cyan-500/10 bg-[#07080a]/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-rose-500/20 bg-[#07080a]/95 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         
-        {/* Brand Logo - flex-shrink-0 to prevent compression */}
+        {/* Brand Logo */}
         <a href="#" className="flex items-center gap-3 flex-shrink-0 group">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 via-teal-500 to-cyan-700 p-[1px] shadow-[0_0_20px_rgba(0,229,255,0.3)]">
+          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-rose-500 via-red-600 to-rose-800 p-[1px] shadow-[0_0_20px_rgba(255,30,86,0.4)]">
             <div className="flex h-full w-full items-center justify-center rounded-xl bg-[#0a0c10]">
-              <span className="font-black text-xl tracking-tighter text-cyan-400">V</span>
+              <span className="font-black text-xl tracking-tighter text-rose-500">V</span>
             </div>
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5 leading-none">
               <span className="font-extrabold text-xl tracking-wider text-white">VELMO</span>
-              <span className="font-extrabold text-xl tracking-wider text-cyan-400 drop-shadow-[0_0_12px_rgba(0,229,255,0.6)]">BLACK</span>
+              <span className="font-extrabold text-xl tracking-wider text-rose-500 drop-shadow-[0_0_12px_rgba(255,30,86,0.7)]">BLACK</span>
             </div>
           </div>
         </a>
 
-        {/* Navigation Links - xl:flex only to avoid squeezing on medium screens */}
+        {/* Navigation Links */}
         <nav className="hidden xl:flex items-center gap-6 2xl:gap-8 text-sm font-medium text-zinc-300">
-          <a href="#produtos" className="whitespace-nowrap transition-colors hover:text-cyan-400">
+          <a href="#produtos" className="whitespace-nowrap transition-colors hover:text-rose-400">
             Produtos
           </a>
-          <a href="#como-funciona" className="whitespace-nowrap transition-colors hover:text-cyan-400">
+          <a href="#como-funciona" className="whitespace-nowrap transition-colors hover:text-rose-400">
             Como Funciona
           </a>
-          <a href="#simulador" className="whitespace-nowrap transition-colors hover:text-cyan-400 flex items-center gap-1.5">
-            <Sparkles className="h-3.5 w-3.5 text-cyan-400 flex-shrink-0" />
+          <a href="#simulador" className="whitespace-nowrap transition-colors hover:text-rose-400 flex items-center gap-1.5">
+            <Sparkles className="h-3.5 w-3.5 text-rose-500 flex-shrink-0" />
             Simulador
           </a>
-          <a href="#comparativo" className="whitespace-nowrap transition-colors hover:text-cyan-400">
+          <a href="#comparativo" className="whitespace-nowrap transition-colors hover:text-rose-400">
             Diferenciais
           </a>
-          <a href="#depoimentos" className="whitespace-nowrap transition-colors hover:text-cyan-400">
+          <a href="#depoimentos" className="whitespace-nowrap transition-colors hover:text-rose-400">
             Depoimentos
           </a>
-          <a href="#kits" className="whitespace-nowrap transition-colors hover:text-cyan-400">
+          <a href="#kits" className="whitespace-nowrap transition-colors hover:text-rose-400">
             Kits & Preços
           </a>
-          <a href="#faq" className="whitespace-nowrap transition-colors hover:text-cyan-400">
+          <a href="#faq" className="whitespace-nowrap transition-colors hover:text-rose-400">
             FAQ
           </a>
         </nav>
@@ -65,9 +65,9 @@ export function Navbar() {
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-bold text-black shadow-[0_0_25px_rgba(0,229,255,0.4)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(0,229,255,0.7)] hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
+            className="group relative inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-500 via-red-500 to-rose-600 px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-[0_0_25px_rgba(255,30,86,0.4)] btn-shimmer transition-all duration-300 hover:shadow-[0_0_35px_rgba(255,30,86,0.7)] hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
           >
-            <WhatsAppIcon className="h-4 w-4 fill-black flex-shrink-0" />
+            <WhatsAppIcon className="h-4 w-4 fill-white flex-shrink-0" />
             <span>Falar no WhatsApp</span>
           </a>
         </div>
@@ -82,20 +82,20 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile / Tablet Drawer */}
+      {/* Mobile Drawer */}
       {isOpen && (
-        <div className="xl:hidden border-b border-cyan-500/20 bg-[#0a0c10] px-4 pt-3 pb-6 space-y-4">
+        <div className="xl:hidden border-b border-rose-500/20 bg-[#0a0c10] px-4 pt-3 pb-6 space-y-4">
           <nav className="flex flex-col space-y-3 text-base font-medium text-zinc-300">
-            <a onClick={() => setIsOpen(false)} href="#produtos" className="hover:text-cyan-400 py-1">Linha de Produtos</a>
-            <a onClick={() => setIsOpen(false)} href="#como-funciona" className="hover:text-cyan-400 py-1">Como Funciona a Fórmula</a>
-            <a onClick={() => setIsOpen(false)} href="#simulador" className="hover:text-cyan-400 py-1 flex items-center gap-2">
-              <Sparkles className="h-4 w-4 text-cyan-400" />
+            <a onClick={() => setIsOpen(false)} href="#produtos" className="hover:text-rose-400 py-1">Linha de Produtos</a>
+            <a onClick={() => setIsOpen(false)} href="#como-funciona" className="hover:text-rose-400 py-1">Como Funciona a Fórmula</a>
+            <a onClick={() => setIsOpen(false)} href="#simulador" className="hover:text-rose-400 py-1 flex items-center gap-2">
+              <Sparkles className="h-4 w-4 text-rose-500" />
               Simulador de Metas
             </a>
-            <a onClick={() => setIsOpen(false)} href="#comparativo" className="hover:text-cyan-400 py-1">Diferenciais Velmo Black</a>
-            <a onClick={() => setIsOpen(false)} href="#depoimentos" className="hover:text-cyan-400 py-1">Depoimentos & Resultados</a>
-            <a onClick={() => setIsOpen(false)} href="#kits" className="hover:text-cyan-400 py-1">Kits Promocionais</a>
-            <a onClick={() => setIsOpen(false)} href="#faq" className="hover:text-cyan-400 py-1">Perguntas Frequentes</a>
+            <a onClick={() => setIsOpen(false)} href="#comparativo" className="hover:text-rose-400 py-1">Diferenciais Velmo Black</a>
+            <a onClick={() => setIsOpen(false)} href="#depoimentos" className="hover:text-rose-400 py-1">Depoimentos & Resultados</a>
+            <a onClick={() => setIsOpen(false)} href="#kits" className="hover:text-rose-400 py-1">Kits Promocionais</a>
+            <a onClick={() => setIsOpen(false)} href="#faq" className="hover:text-rose-400 py-1">Perguntas Frequentes</a>
           </nav>
 
           <div className="pt-2">
@@ -103,9 +103,9 @@ export function Navbar() {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 to-teal-400 py-3 text-center text-sm font-bold text-black shadow-[0_0_20px_rgba(0,229,255,0.4)]"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-500 to-red-600 py-3 text-center text-sm font-bold text-white shadow-[0_0_20px_rgba(255,30,86,0.4)] btn-shimmer"
             >
-              <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
+              <WhatsAppIcon className="h-5 w-5 fill-white flex-shrink-0" />
               <span>Chamar no WhatsApp ({VELMO_WHATSAPP_DISPLAY})</span>
             </a>
           </div>

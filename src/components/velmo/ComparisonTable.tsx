@@ -1,4 +1,4 @@
-import { Check, X, ShieldAlert, Sparkles } from "lucide-react";
+import { Check, X, Sparkles } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 
@@ -6,7 +6,7 @@ export function ComparisonTable() {
   const criteria = [
     {
       label: "Sensação de fome e fraqueza",
-      velmo: "Zero fome (Saciedade e modulação do apetite)",
+      velmo: "Zero fome (Saciedade & Sabor Morango)",
       dietas: "Fome extrema, tonturas e mau humor",
       remedios: "Enjoos fortes, náuseas e vômitos",
     },
@@ -42,14 +42,14 @@ export function ComparisonTable() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-cyan-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-950/40 px-4 py-1 text-xs font-bold uppercase tracking-widest text-rose-300">
             <Sparkles className="h-3.5 w-3.5" />
             Comparativo Definitivo
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Por que insistir em métodos que{" "}
-            <span className="tiffany-text-gradient">só destroem seu corpo?</span>
+            <span className="strawberry-text-gradient">só destroem seu corpo?</span>
           </h2>
           
           <p className="text-base text-zinc-400">
@@ -59,15 +59,15 @@ export function ComparisonTable() {
 
         {/* Table Container */}
         <div className="mt-14 overflow-x-auto">
-          <div className="min-w-[640px] rounded-3xl border border-cyan-500/30 bg-[#0d1017] shadow-2xl backdrop-blur-xl">
+          <div className="min-w-[640px] rounded-3xl border border-rose-500/30 bg-[#0d1017] shadow-2xl backdrop-blur-xl">
             
             {/* Table Header */}
             <div className="grid grid-cols-12 border-b border-zinc-800 p-6 text-sm font-black text-zinc-300 bg-zinc-950/80 rounded-t-3xl items-center">
               <div className="col-span-4 text-left font-bold text-zinc-400">Aspecto Avaliado</div>
               
               {/* Velmo Black Winner Column */}
-              <div className="col-span-4 text-center rounded-2xl bg-cyan-950/70 border border-cyan-400/50 py-3 text-cyan-300 font-extrabold shadow-[0_0_20px_rgba(0,229,255,0.2)]">
-                ✦ VELMO BLACK
+              <div className="col-span-4 text-center rounded-2xl bg-rose-950/80 border border-rose-500/60 py-3 text-rose-200 font-extrabold shadow-[0_0_20px_rgba(255,30,86,0.25)]">
+                🍓 VELMO BLACK
               </div>
 
               <div className="col-span-2 text-center text-zinc-400">Dietas Restritivas</div>
@@ -83,20 +83,20 @@ export function ComparisonTable() {
                   </div>
 
                   {/* Velmo Black Column */}
-                  <div className="col-span-4 text-center px-3 py-2 rounded-xl bg-cyan-950/30 border border-cyan-500/30 font-semibold text-cyan-200 flex items-center justify-center gap-2">
-                    <Check className="h-4 w-4 text-cyan-400 flex-shrink-0" />
+                  <div className="col-span-4 text-center px-3 py-2 rounded-xl bg-rose-950/40 border border-rose-500/30 font-semibold text-rose-200 flex items-center justify-center gap-2">
+                    <Check className="h-4 w-4 text-rose-400 flex-shrink-0" />
                     <span>{item.velmo}</span>
                   </div>
 
                   {/* Dietas Column */}
                   <div className="col-span-2 text-center text-zinc-400 px-2 flex flex-col items-center justify-center gap-1">
-                    <X className="h-4 w-4 text-rose-500 flex-shrink-0" />
+                    <X className="h-4 w-4 text-zinc-600 flex-shrink-0" />
                     <span className="text-[11px] leading-tight">{item.dietas}</span>
                   </div>
 
                   {/* Remedios Column */}
                   <div className="col-span-2 text-center text-zinc-400 px-2 flex flex-col items-center justify-center gap-1">
-                    <X className="h-4 w-4 text-rose-500 flex-shrink-0" />
+                    <X className="h-4 w-4 text-zinc-600 flex-shrink-0" />
                     <span className="text-[11px] leading-tight">{item.remedios}</span>
                   </div>
                 </div>
@@ -112,9 +112,9 @@ export function ComparisonTable() {
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-400 to-teal-400 px-8 py-4 text-sm sm:text-base font-extrabold text-black shadow-[0_0_30px_rgba(0,229,255,0.4)] btn-shimmer hover:shadow-[0_0_45px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
+            className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-rose-500 to-red-600 px-8 py-4 text-sm sm:text-base font-extrabold text-white shadow-[0_0_30px_rgba(255,30,86,0.4)] btn-shimmer hover:shadow-[0_0_45px_rgba(255,30,86,0.7)] hover:scale-105 transition-all"
           >
-            <WhatsAppIcon className="h-5 w-5 fill-black flex-shrink-0" />
+            <WhatsAppIcon className="h-5 w-5 fill-white flex-shrink-0" />
             <span>ESCOLHER A FORMA SEGURA NO WHATSAPP</span>
           </a>
         </div>
